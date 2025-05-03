@@ -45,36 +45,13 @@ To start the Streamlit UI:
 python main.py
 ```
 
-#### Using Gitpod
-
-(check: https://www.gitpod.io/docs/flex/integrations/cli)
-
-1. install gitpod cli
-```
-curl -o gitpod -fsSL "https://releases.gitpod.io/cli/stable/gitpod-$(uname -s | tr '[:upper:]' '[:lower:]')-$(uname -m | sed 's/x86_64/amd64/;s/\(arm64\|aarch64\)/arm64/')" && \
-chmod +x gitpod && \
-sudo mv gitpod /usr/local/bin
-```
-
-2. check installation
-```
-(financials) ➜  financials git:(main) ✗ gitpod -h
-
-      .-+*#+                 Gitpod: Always ready to code.
-   :=*#####*.                Try the following commands to get started:
-  .=*####*+-.    .--:
-  +****=:     :=*####+       gitpod login              Login to Gitpod
-  ****:   .-+*########.      gitpod whoami             Show information about the currently logged in user
-  +***:   *****+--####.
-  +***:   .-=:.  .#*##.      gitpod environment list   List your environments
-  +***+-.      .-+****       gitpod environment create Create a new environment
-  .=*****+=::-+*****+:       gitpod environment open   Open a running environment
-  .:=+*********=-.           gitpod environment stop   Stop a running environment
-      .-++++=:
-```
-
-
+#### Using Docker
 This will launch the Streamlit server and open the application in your default web browser.
+
+```bash
+ 6145  docker run financial:v0 -p 8501:8501
+ 6146  docker run -p 8501:8501 financial:v0
+ ```
 
 ## Patterns and Best Practices
 
