@@ -10,19 +10,6 @@ async def _parse_pdf():
     elements = partition("./data/EIN-Red64-CP_575_G_Notice.pdf")
     return elements
 
-def _weigh_tree(elements):
-    """Weigh the document tree based on the elements."""
-    # This is a placeholder for the actual weighing logic
-    # In a real implementation, you would analyze the elements and assign weights
-    weighted_elements = []
-    for i, element in enumerate(elements):
-        weighted_elements.append({
-            'element': element,
-            'weight': i + 1,  # Simple placeholder weight
-            'content': str(element)
-        })
-    return weighted_elements
-
 async def main():
     """
     Main function to run the Streamlit application.
@@ -59,9 +46,6 @@ async def main():
             # Parse the PDF
             elements = await _parse_pdf()
             
-            # Weigh the tree
-            weighted_elements = _weigh_tree(elements)
-            
             # Display document info in the left column
             document_info.write(f"Total elements: {len(elements)}")
             
@@ -69,10 +53,10 @@ async def main():
             with results_container:
                 st.success("PDF parsed successfully!")
                 
-                # Display the weighted elements
-                for item in weighted_elements:
-                    with st.expander(f"Element (Weight: {item['weight']})"):
-                        st.write(item['content'])
+                # Display the elements
+                for element in elements:
+                    with st.expander(f"Element"):
+                        st.write(str(element))
 
 
 if __name__ == "__main__":
