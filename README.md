@@ -38,11 +38,23 @@ uv pip install -e .
 
 ### Running the Application
 
+#### Directly
 To start the Streamlit UI:
 
 ```bash
 python main.py
 ```
+
+#### Using Gitpod
+
+1. install gitpod cli
+```
+Warning: gitpod-io/tap/gitpod 0.1.4 is already installed and up-to-date.
+To reinstall 0.1.4, run:
+  brew reinstall gitpod
+```
+
+2. 
 
 This will launch the Streamlit server and open the application in your default web browser.
 
