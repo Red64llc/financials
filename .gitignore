@@ -1,0 +1,75 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Virtual environment
+.env/
+.venv/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Poetry
+poetry.lock
+# Optional: if you're using poetry versioning cache
+.cache/
+
+# Pytest
+.cache/
+.pytest_cache/
+
+# MyPy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Coverage reports
+htmlcov/
+.coverage
+.coverage.*
+.cache/
+nosetests.xml
+coverage.xml
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# PyCharm & VSCode
+.idea/
+.vscode/
+*.code-workspace
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+MANIFEST
+
+# Logs and local config
+*.log
+*.local
+*.env
+*.ini
+.env.*
+
+# Sphinx documentation
+docs/_build/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Bandit security reports
+bandit.json
+
+# Test output
+test-output/
+
+# Ruff / lint cache
+.ruff_cache/

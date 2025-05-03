@@ -1,0 +1,4 @@
+* only use "uv" as package manager
+* only use "pyproject.toml" as configuration file
+* only use "uv.lock" as lock file
+* only use "src" as source code directory
