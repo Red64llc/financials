@@ -47,14 +47,32 @@ python main.py
 
 #### Using Gitpod
 
+(check: https://www.gitpod.io/docs/flex/integrations/cli)
+
 1. install gitpod cli
 ```
-Warning: gitpod-io/tap/gitpod 0.1.4 is already installed and up-to-date.
-To reinstall 0.1.4, run:
-  brew reinstall gitpod
+curl -o gitpod -fsSL "https://releases.gitpod.io/cli/stable/gitpod-$(uname -s | tr '[:upper:]' '[:lower:]')-$(uname -m | sed 's/x86_64/amd64/;s/\(arm64\|aarch64\)/arm64/')" && \
+chmod +x gitpod && \
+sudo mv gitpod /usr/local/bin
 ```
 
-2. 
+2. check installation
+```
+(financials) ➜  financials git:(main) ✗ gitpod -h
+
+      .-+*#+                 Gitpod: Always ready to code.
+   :=*#####*.                Try the following commands to get started:
+  .=*####*+-.    .--:
+  +****=:     :=*####+       gitpod login              Login to Gitpod
+  ****:   .-+*########.      gitpod whoami             Show information about the currently logged in user
+  +***:   *****+--####.
+  +***:   .-=:.  .#*##.      gitpod environment list   List your environments
+  +***+-.      .-+****       gitpod environment create Create a new environment
+  .=*****+=::-+*****+:       gitpod environment open   Open a running environment
+  .:=+*********=-.           gitpod environment stop   Stop a running environment
+      .-++++=:
+```
+
 
 This will launch the Streamlit server and open the application in your default web browser.
 
