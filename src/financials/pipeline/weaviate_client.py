@@ -244,7 +244,7 @@ class WeaviateVectorStore:
         """
         # Perform the vector search
         response = self.collection.query.near_vector(
-            vector=query_vector,
+            near_vector=query_vector,
             limit=k
         )
         
