@@ -1,7 +1,5 @@
-version: '3'
-
 services:
-  financials:
+  financials-ui:
     build:
       context: .
       dockerfile: Dockerfile
@@ -10,6 +8,25 @@ services:
     volumes:
       - ./output:/app/output
       - ./data:/app/data
+    command: ["uv", "run", "streamlit", "run", "src/financials/app.py", "--server.headless", "true"]
+    environment:
+      - PYTHONUNBUFFERED=1
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+      - WEAVIATE_HOST=weaviate
+      - WEAVIATE_PORT=8080
+      - WEAVIATE_GRPC_PORT=50051
+    depends_on:
+      - weaviate
+
+  financials-cli:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./output:/app/output
+      - ./data:/app/data
+    # Use entrypoint to make the container wait for commands
+    entrypoint: ["/bin/bash", "-c", "sleep infinity"]
     environment:
       - PYTHONUNBUFFERED=1
       - OPENAI_API_KEY=${OPENAI_API_KEY}
