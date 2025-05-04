@@ -1,9 +1,11 @@
 [project]
 name = "financials"
 version = "0.1.0"
-description = "Add your description here"
+description = "Financials analysis tool"
 readme = "README.md"
-author = "Yacin Bahi <yacin@red64.io>"
+authors = [
+    { name = "Yacin Bahi", email = "yacin@red64.io" }
+]
 requires-python = ">=3.11"
 
 dependencies = [
@@ -11,5 +13,10 @@ dependencies = [
     "pandas>=2.2.3",
     "streamlit>=1.45.0",
     "unstructured[all-docs]>=0.17.2",
+    "langchain>=0.1.0",
+    "langchain-openai>=0.0.2",
+    "chromadb>=0.4.22",
 ]
-    
+
+[project.scripts]
+finanalyze = "financials.cli.cli:main"

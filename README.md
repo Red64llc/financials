@@ -2,6 +2,27 @@
 
 A financial data analysis and visualization application.
 
+## CLI Tool
+
+The package includes a command-line interface (CLI) for processing PDF documents:
+
+```bash
+# Load a PDF file
+finanalyze load path-to-file.pdf
+
+# Process a PDF file
+finanalyze process path-to-file.pdf
+
+# Chunk a PDF file
+finanalyze chunk path-to-file.pdf
+```
+
+Before using the CLI, make sure to set the `OPENAI_API_KEY` environment variable:
+
+```bash
+export OPENAI_API_KEY="your-api-key"
+```
+
 ## Project Structure
 
 ```
@@ -9,7 +30,11 @@ financials/
 ├── src/               # Source code directory
 │   └── financials/    # Main package
 │       ├── __init__.py
-│       └── app.py     # Streamlit application
+│       ├── app.py     # Streamlit application
+│       ├── pdf_processor.py # PDF processing pipeline
+│       └── cli/       # Command-line interface
+│           ├── __init__.py
+│           └── cli.py # CLI implementation
 ├── main.py           # Entry point script
 ├── pyproject.toml    # Project configuration
 └── uv.lock           # Lock file for dependencies
@@ -59,3 +84,5 @@ This will launch the Streamlit server and open the application in your default w
 - Package management is handled by `uv`
 - Configuration is maintained in `pyproject.toml`
 - Dependencies are locked in `uv.lock`
+- CLI tools are implemented using the argparse library
+- PDF processing follows a pipeline pattern with clear separation of concerns
