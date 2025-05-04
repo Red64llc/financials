@@ -53,9 +53,9 @@ class PDFProcessor:
         
         # Initialize Weaviate vector store
         self.vector_store = WeaviateVectorStore(
-            host=db_host,
-            port=db_port,
-            grpc_port=db_grpc_port,
+            host=self.db_host,  # Use self.db_host
+            port=self.db_port,  # Use self.db_port
+            grpc_port=self.db_grpc_port,  # Use self.db_grpc_port
             auth_config={"X-OpenAI-Api-Key": openai_api_key}
         )
         

@@ -7,7 +7,6 @@ This module provides a CLI for the PDFProcessor to load, process, and chunk PDF 
 import os
 import argparse
 import logging
-from pathlib import Path
 from typing import Optional
 
 from financials.pipeline.pdf_processor import PDFProcessor
@@ -31,8 +30,7 @@ def setup_processor() -> Optional[PDFProcessor]:
     return PDFProcessor(
         openai_api_key=openai_api_key,
         chunk_size=1000,
-        chunk_overlap=200,
-        db_directory="./chroma_db"
+        chunk_overlap=200
     )
 
 

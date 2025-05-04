@@ -12,6 +12,7 @@ import weaviate
 from weaviate.client import WeaviateClient
 from weaviate.collections import Collection
 import weaviate.classes as wvc
+from weaviate.classes.init import Auth
 from langchain.schema import Document
 
 logger = logging.getLogger(__name__)
@@ -68,26 +69,41 @@ class WeaviateVectorStore:
         """Initialize the Weaviate client."""
         if client:
             self.client = client
+            return
+        if host is None or port is None or grpc_port is None:
+            raise ValueError("host, port, and grpc_port must be provided if client is not provided")
+        
+        # Set up connection based on environment
+        if host == "localhost" or host.startswith("127.0.0.1"):
+            self.client = weaviate.connect_to_local(
+                host=host,
+                port=port,
+                grpc_port=grpc_port,
+                headers=auth_config
+            )
         else:
-            # Set up connection based on environment
-            if host == "localhost" or host.startswith("127.0.0.1"):
-                self.client = weaviate.connect_to_local(
-                    host=host,
-                    port=port,
-                    grpc_port=grpc_port,
-                    headers=auth_config
-                )
-            else:
-                # For cloud/remote deployment
-                connection_params = {
-                    "url": f"http://{host}:{port}",
-                    "grpc_url": f"{host}:{grpc_port}",
-                }
+            # For cloud/remote deployment
+            cluster_url = f"http://{host}:{port}"
+            
+            # Configure authentication credentials if provided
+            auth_credentials = None
+            if auth_config and "X-OpenAI-Api-Key" in auth_config:
+                # Extract OpenAI API key if needed for vectorizer
+                openai_api_key = auth_config.get("X-OpenAI-Api-Key")
+                # Additional headers for vectorizer modules if needed
+                additional_headers = {k: v for k, v in auth_config.items() if k != "X-OpenAI-Api-Key"}
                 
-                if auth_config:
-                    connection_params["headers"] = auth_config
-                
-                self.client = weaviate.connect_to_wcs(**connection_params)
+                # If there's an API key for Weaviate Cloud in auth_config
+                if "Authorization" in auth_config:
+                    weaviate_api_key = auth_config.get("Authorization").replace("Bearer ", "")
+                    auth_credentials = Auth.api_key(weaviate_api_key)
+                    
+            # Connect to Weaviate Cloud
+            self.client = weaviate.connect_to_weaviate_cloud(
+                cluster_url=cluster_url,
+                auth_credentials=auth_credentials,
+                headers=auth_config  # Pass any additional headers
+            )
         
         logger.info(f"Weaviate client initialized, connecting to {host}:{port}")
     
