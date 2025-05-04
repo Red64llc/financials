@@ -46,7 +46,7 @@ class OptimizedFinancialExtractor:
         
         unique_chunks = self._deduplicate_chunks(chunks)
         logger.info(f"Found {len(unique_chunks)} unique financial chunks")
-        
+        logger.info(f"Processing chunks...")
         for chunk in unique_chunks:
             chunk_text = chunk.page_content
             metadata = chunk.metadata
@@ -73,39 +73,49 @@ class OptimizedFinancialExtractor:
         if len(text.split()) < 6:  # Only process substantial chunks
             return
         try:
+            logger.info(f"Processing chunk: {text}")
             # Use FinBERT to identify financial context
             finbert_result = self.finbert_nlp(text[:512])  # Limit to model's max length
             
-            # Only process chunks identified as financial in nature
-            if any(result['label'] in ['neutral', 'positive', 'negative'] for result in finbert_result):
-                # Search for revenue-related terms
-                if re.search(r'\b(revenue|sales|turnover|income|earnings)\b', text.lower()):
-                    # Extract monetary amounts
-                    monetary_amounts = self._extract_monetary_amounts(text)
-                    
-                    # Extract time periods
-                    time_periods = self._extract_time_periods(text)
-                    
-                    # If we have both money values and time periods, associate them
-                    if monetary_amounts and time_periods:
-                        for amount_info in monetary_amounts:
-                            for period in time_periods:
-                                # Calculate confidence based on proximity
-                                confidence = self._calculate_proximity_confidence(
-                                    text, amount_info['text'], period['text']
-                                )
-                                
-                                # Source from metadata
-                                source = metadata.get('source', 'unknown')
-                                
-                                self.revenue_data.append({
-                                    'source': source,
-                                    'period': period['normalized'],
-                                    'value': amount_info['value'],
-                                    'unit': amount_info['unit'],
-                                    'confidence': confidence,
-                                    'context': text[:100] + '...' if len(text) > 100 else text
-                                })
+            # Extract monetary amounts
+            monetary_amounts = self._extract_monetary_amounts(text)
+            logger.info(f"Extracted monetary amounts: {monetary_amounts}")
+            
+            # Extract time periods
+            time_periods = self._extract_time_periods(text)
+            logger.info(f"Extracted time periods: {time_periods}")
+            
+            # If we have both money values and time periods, associate them
+            if monetary_amounts and time_periods:
+                for amount_info in monetary_amounts:
+                    for period in time_periods:
+                        # Calculate confidence based on proximity
+                        confidence = self._calculate_proximity_confidence(
+                            text, amount_info['text'], period['text']
+                        )
+                        
+                        # Source from metadata
+                        source = metadata.get('source', 'unknown')
+                        
+                        self.revenue_data.append({
+                            'source': source,
+                            'period': period['normalized'],
+                            'value': amount_info['value'],
+                            'unit': amount_info['unit'],
+                            'confidence': confidence,
+                            'context': text[:100] + '...' if len(text) > 100 else text
+                        })
+            elif monetary_amounts:
+                for amount_info in monetary_amounts:
+                    self.revenue_data.append({
+                        'source': metadata.get('source', 'unknown'),
+                        'period': 'unknown',
+                        'value': amount_info['value'],
+                        'unit': amount_info['unit'],
+                        'confidence': 1.0,
+                        'context': text[:100] + '...' if len(text) > 100 else text
+                    })
+
         except Exception as e:
             logger.error(f"Error analyzing chunk with FinBERT: {e}")
     
@@ -295,7 +305,8 @@ class OptimizedFinancialExtractor:
         # Filter by confidence 
         df_high_conf = df[df['confidence'] >= 0.7]
         
-        # Group by period and calculate weighted average based on confidence
+        # Need to find a better consolidation strategy, this is just a quick fix to
+        # get something working and display something
         df['weighted_value'] = df['value'] * df['confidence']
         grouped = df.groupby('period').agg({
             'weighted_value': 'sum',

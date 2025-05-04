@@ -20,7 +20,16 @@ class ChatSystem:
         logger.info("ChatSystem initialized successfully")
 
     def _format_financial_data_response(self, financial_data, user_query):
-        """Format financial data into a natural language response"""
+        """Format financial data into a natural language response
+        
+        Args:
+            financial_data: DataFrame containing the extracted financial data
+            user_query: The user's query
+        Returns:
+            response: A natural language response based on the financial data
+        Format of the financial data:
+            period,confidence,unit,source,value,prev_value,growth_rate
+        """
         # Create a natural language response based on the financial data
         if financial_data.empty:
             return "I couldn't find specific revenue data related to your query."
@@ -33,14 +42,15 @@ class ChatSystem:
             period_info = f"I found revenue data for {len(periods)} periods from {periods[0]} to {periods[-1]}."
         
         # Format revenue information
-        revenue_info = "Here's the revenue information:\n\n"
+        revenue_info = "Here's the revenue information (period, value, unit, source, growth_rate):\n\n"
         for _, row in financial_data.iterrows():
             period = row['period']
             value = row['value']
             unit = row['unit']
             growth = row.get('growth_rate', None)
+            source = row['source']
             
-            revenue_line = f"• {period}: {value:,.2f} {unit}"
+            revenue_line = f"• {period}: {value:,.2f} {unit} from {source}\n"
             if growth is not None and not pd.isna(growth):
                 growth_pct = growth * 100
                 direction = "increase" if growth_pct > 0 else "decrease"
@@ -86,7 +96,9 @@ class ChatSystem:
             
             self.logger.info(f"Found {len(documents)} relevant documents for query: {query}")
             # then extract the financial data from the documents
-            # this is much faster than extracting from the files direclty    
+            # this is much faster than extracting from the files direclty
+            # the format is:  
+            # period,confidence,unit,source,value,prev_value,growth_rate
             financial_data = self.extractor.extract(documents)
             
             if financial_data is not None:

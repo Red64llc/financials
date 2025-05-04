@@ -13,7 +13,7 @@ st.set_page_config(
 
 
 @st.cache_resource
-def configure_logging(file_path, level=logging.DEBUG):
+def configure_logging(file_path, level=logging.INFO):
     """Configure logging to both console and file"""
     logger = logging.getLogger()
     logger.setLevel(level)
