@@ -168,6 +168,11 @@ class WeaviateVectorStore:
         logger.info(f"Created new collection: {self.collection_name}")
         return collection
     
+    def get_collections(self):
+        """Get list of collections in the Weaviate instance."""
+        collections = self.client.collections.list_all(simple=True)
+        return collections
+    
     def add_documents(
         self,
         documents: List[Document],
