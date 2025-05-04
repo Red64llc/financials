@@ -4,7 +4,7 @@ Main Streamlit application for the financials project.
 import asyncio
 import logging
 import streamlit as st
-from unstructured.partition.pdf import partition_pdf
+from pdf_processor import PDFProcessor
 
 # Configure logging
 logging.basicConfig(
@@ -185,10 +185,10 @@ async def main():
             for i, file_name in enumerate(selected_files):
                 logger.info(f"Processing file {i+1}/{len(selected_files)}: {file_name}")
                 
-                with st.spinner(f"Parsing {file_name}..."):
+                with st.spinner(f"Processing {file_name}..."):
                     try:
                         # Parse the PDF
-                        elements = await parse_pdf(file_name)
+                        elements = await PDFProcessor.process_pdf(file_name)
                         all_elements.extend(elements)
                         
                         # Add file-specific results

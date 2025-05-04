@@ -73,8 +73,9 @@ class WeaviateVectorStore:
         if host is None or port is None or grpc_port is None:
             raise ValueError("host, port, and grpc_port must be provided if client is not provided")
         
-        # Set up connection based on environment
-        if host == "localhost" or host.startswith("127.0.0.1"):
+        # Set up connection based on environment (local, docker or cloud)
+        if host == "weaviate" or host == "localhost" or host.startswith("127.0.0.1"):
+            logger.info(f"Connecting to local Weaviate at {host}:{port}")
             self.client = weaviate.connect_to_local(
                 host=host,
                 port=port,
@@ -82,6 +83,7 @@ class WeaviateVectorStore:
                 headers=auth_config
             )
         else:
+            logger.info(f"Connecting to remote Weaviate at {host}:{port}")
             # For cloud/remote deployment
             cluster_url = f"http://{host}:{port}"
             
