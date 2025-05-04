@@ -46,6 +46,8 @@ financials/
 - Streamlit 1.45.0+ (UI framework)
 - Pandas 2.2.3+ (Data manipulation)
 - NumPy 2.2.5+ (Numerical computing)
+- Weaviate (Vector database)
+- LangChain (Text processing pipeline)
 - uv (Package manager)
 
 ## Development Environment

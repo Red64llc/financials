@@ -1,15 +1,14 @@
 import os
-from pathlib import Path
-from typing import List, Dict, Any, Optional
+from typing import List, Dict, Any
 import logging
 
 from unstructured.partition.pdf import partition_pdf
 from unstructured.chunking.title import chunk_by_title
 from langchain.text_splitter import RecursiveCharacterTextSplitter
-from langchain_openai import OpenAIEmbeddings
-from langchain_community.vectorstores import Chroma
 from langchain.schema import Document
-import chromadb
+
+from financials.pipeline.embeddings import EmbeddingService
+from financials.pipeline.weaviate_client import WeaviateVectorStore
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
@@ -32,19 +31,33 @@ class PDFProcessor:
         openai_api_key: str,
         chunk_size: int = 1000,
         chunk_overlap: int = 200,
-        db_directory: str = "./chroma_db"
+        db_host: str = None,
+        db_port: int = None,
+        db_grpc_port: int = None
     ):
         """Initialize the pipeline with required configurations."""
         self.openai_api_key = openai_api_key
         self.chunk_size = chunk_size
         self.chunk_overlap = chunk_overlap
-        self.db_directory = db_directory
         
-        # Initialize embeddings
-        self.embeddings = OpenAIEmbeddings(openai_api_key=openai_api_key)
+        # Get connection details from environment variables or use defaults/passed values
+        self.db_host = db_host or os.getenv("WEAVIATE_HOST", "localhost")
+        self.db_port = db_port or int(os.getenv("WEAVIATE_PORT", "8080"))
+        self.db_grpc_port = db_grpc_port or int(os.getenv("WEAVIATE_GRPC_PORT", "50051"))
         
-        # Initialize ChromaDB client (can be swapped with other vector DBs)
-        self.chroma_client = chromadb.PersistentClient(path=db_directory)
+        # Initialize embeddings service
+        self.embedding_service = EmbeddingService(
+            embedding_type="openai",
+            api_key=openai_api_key
+        )
+        
+        # Initialize Weaviate vector store
+        self.vector_store = WeaviateVectorStore(
+            host=db_host,
+            port=db_port,
+            grpc_port=db_grpc_port,
+            auth_config={"X-OpenAI-Api-Key": openai_api_key}
+        )
         
         # Initialize text splitter as backup
         self.text_splitter = RecursiveCharacterTextSplitter(
@@ -217,7 +230,8 @@ class PDFProcessor:
         """
         Step 4: Generate embeddings for the document chunks.
         
-        Uses OpenAI embeddings, but can be replaced with:
+        Uses the embedding service which supports multiple backends:
+        - OpenAI embeddings
         - HuggingFace embeddings
         - Cohere embeddings
         - Local models like BERT
@@ -225,7 +239,7 @@ class PDFProcessor:
         texts = [doc.page_content for doc in documents]
         
         try:
-            embeddings = self.embeddings.embed_documents(texts)
+            embeddings = self.embedding_service.embed_documents(texts)
             logger.info(f"Generated embeddings for {len(texts)} documents")
             return embeddings
             
@@ -235,32 +249,26 @@ class PDFProcessor:
     
     def store_in_vectordb(
         self, 
-        documents: List[Document], 
+        documents: List[Document],
+        embeddings: List[List[float]],
         collection_name: str = "pdf_documents"
-    ) -> Chroma:
+    ) -> int:
         """
         Step 5: Store documents and embeddings in vector database.
         
-        ChromaDB is used as an example, but can be replaced with:
-        - Pinecone
-        - Weaviate  
-        - Qdrant
-        - FAISS
-        - pgvector
+        Weaviate is used as the vector database.
         """
         try:
-            # Create or get collection
-            vectorstore = Chroma(
-                client=self.chroma_client,
-                collection_name=collection_name,
-                embedding_function=self.embeddings
-            )
+            # Set the collection name if different from default
+            if collection_name != self.vector_store.collection_name:
+                self.vector_store.collection_name = collection_name
+                self.vector_store.collection = self.vector_store._init_collection()
             
             # Add documents to the vector store
-            vectorstore.add_documents(documents)
+            doc_ids = self.vector_store.add_documents(documents, embeddings)
             
-            logger.info(f"Stored {len(documents)} documents in vector database")
-            return vectorstore
+            logger.info(f"Stored {len(documents)} documents in Weaviate vector database")
+            return len(doc_ids)
             
         except Exception as e:
             logger.error(f"Error storing in vector database: {str(e)}")
@@ -270,7 +278,7 @@ class PDFProcessor:
         self, 
         pdf_path: str, 
         collection_name: str = "pdf_documents"
-    ) -> Chroma:
+    ) -> int:
         """
         Complete pipeline: Process PDF and store in vector database.
         """
@@ -283,47 +291,12 @@ class PDFProcessor:
         # Step 3: Chunk documents
         chunked_documents = self.chunk_documents(documents)
         
-        # Step 4: Generate embeddings (can be handled internally by vectorstore or explicitly)
+        # Step 4: Generate embeddings
         texts = [doc.page_content for doc in chunked_documents]
-        embeddings = self.embeddings.embed_documents(texts)
+        embeddings = self.embedding_service.embed_documents(texts)
         
         # Step 5: Store in vector database
-        vectorstore = self.store_in_vectordb(chunked_documents, collection_name)
+        nb_docs = self.store_in_vectordb(chunked_documents, embeddings, collection_name)
         
-        logger.info("PDF processing pipeline completed successfully")
-        return vectorstore
-
-
-# Example usage
-# def main():
-#     """Example of using the PDF to Vector DB pipeline."""
-    
-#     # Configuration
-#     openai_api_key = os.getenv("OPENAI_API_KEY")
-#     pdf_path = "example.pdf"
-    
-#     # Initialize pipeline
-#     pipeline = PDFProcessor(
-#         openai_api_key=openai_api_key,
-#         chunk_size=1000,
-#         chunk_overlap=200,
-#         db_directory="./chroma_db"
-#     )
-    
-#     try:
-#         # Process PDF and store in vector database
-#         vectorstore = pipeline.process_pdf_to_vectordb(pdf_path)
-        
-#         # Example query
-#         query = "What are the main topics discussed in this document?"
-#         results = vectorstore.similarity_search(query, k=3)
-        
-#         for i, doc in enumerate(results):
-#             print(f"\n--- Result {i+1} ---")
-#             print(f"Content: {doc.page_content[:200]}...")
-#             print(f"Metadata: {doc.metadata}")
-            
-#     except Exception as e:
-#         logger.error(f"Pipeline failed: {str(e)}")
-
-
+        logger.info(f"PDF processing pipeline completed successfully with {nb_docs} documents")
+        return nb_docs

@@ -9,5 +9,29 @@ services:
       - "8501:8501"
     volumes:
       - ./output:/app/output
+      - ./data:/app/data
     environment:
       - PYTHONUNBUFFERED=1
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+      - WEAVIATE_HOST=weaviate
+      - WEAVIATE_PORT=8080
+      - WEAVIATE_GRPC_PORT=50051
+    depends_on:
+      - weaviate
+
+  weaviate:
+    image: cr.weaviate.io/semitechnologies/weaviate:1.24.1
+    ports:
+      - "8080:8080"
+      - "50051:50051"
+    volumes:
+      - weaviate_data:/var/lib/weaviate
+    environment:
+      - QUERY_DEFAULTS_LIMIT=20
+      - AUTHENTICATION_ANONYMOUS_ACCESS_ENABLED=true
+      - DEFAULT_VECTORIZER_MODULE=none
+      - ENABLE_MODULES=
+      - CLUSTER_HOSTNAME=node1
+
+volumes:
+  weaviate_data:
