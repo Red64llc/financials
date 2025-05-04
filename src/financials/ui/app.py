@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 from pathlib import Path
-
+import logging
 from financials.chat.chat_system import ChatSystem
 
 # Page configuration
@@ -11,15 +11,39 @@ st.set_page_config(
     layout="wide"
 )
 
+
+@st.cache_resource
+def configure_logging(file_path, level=logging.DEBUG):
+    """Configure logging to both console and file"""
+    logger = logging.getLogger()
+    logger.setLevel(level)
+    
+    # Console handler
+    console_handler = logging.StreamHandler()
+    console_handler.setLevel(level)
+    console_format = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+    console_handler.setFormatter(console_format)
+    logger.addHandler(console_handler)
+    
+    # File handler
+    file_handler = logging.FileHandler(file_path)
+    file_handler.setLevel(level)
+    file_format = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+    file_handler.setFormatter(file_format)
+    logger.addHandler(file_handler)
+    
+    return logger
+
 # Initialize ChatSystem
 @st.cache_resource
 def initialize_systems():
     """Initialize Weaviate client and financial extraction system"""
+    logger = configure_logging("financials.log")
     with st.spinner("Connecting to Weaviate and loading models..."):
-        chat_system = ChatSystem()
+        chat_system = ChatSystem(logger=logger)
         return chat_system
 
-# Initialize session state
+# Initialize session state  
 if "messages" not in st.session_state:
     st.session_state.messages = [
         {"role": "assistant", "content": "Hello! I'm your financial data assistant. Ask me about revenue, growth rates, or other financial metrics."}
@@ -61,34 +85,3 @@ if prompt := st.chat_input("Ask me about your financial data"):
         
         # Add to chat history
         st.session_state.messages.append({"role": "assistant", "content": full_response})
-
-# Add visualization section if data is available
-if len(st.session_state.messages) > 1:
-    # Check if we have financial data to visualize
-    data_path = Path("financial_analysis/revenue_data_analyzed.csv")
-    if data_path.exists():
-        st.markdown("---")
-        st.header("Revenue Data Visualization")
-        
-        # Load the extracted data
-        df = pd.read_csv(data_path)
-        
-        # Display interactive chart
-        if not df.empty and 'period' in df.columns and 'value' in df.columns:
-            chart_data = df[['period', 'value']].rename(columns={'value': 'Revenue'})
-            
-            # Add growth rate if available
-            if 'growth_rate' in df.columns:
-                chart_data['Growth Rate (%)'] = df['growth_rate'] * 100
-            
-            # Create tabs for different visualizations
-            tab1, tab2 = st.tabs(["Revenue Over Time", "Growth Rate"])
-            
-            with tab1:
-                st.bar_chart(chart_data, x='period', y='Revenue')
-                
-            with tab2:
-                if 'Growth Rate (%)' in chart_data.columns:
-                    st.line_chart(chart_data, x='period', y='Growth Rate (%)')
-                else:
-                    st.info("Growth rate data not available.")
