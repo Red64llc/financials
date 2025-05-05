@@ -232,7 +232,32 @@ class WeaviateVectorStore:
         
         logger.info(f"Added {len(documents)} documents to Weaviate collection {self.collection_name}")
         return document_ids
-    
+
+    def retrieve_relevant_chunks(self, query_vector):
+        """Retrieve relevant chunks from vector database"""
+        response = self.collection.query.near_vector(
+            near_vector=query_vector,
+            limit=20
+        )
+        results = response.objects
+        # Convert to a format compatible with our extractor
+        chunks = []
+        for item in results:
+            properties = item.properties
+            chunk = Document(
+                page_content=properties.get("content", ""),
+                metadata={
+                    "source": properties.get("source", ""),
+                    "page": properties.get("page", 0),
+                    "chunk_id": properties.get("chunk_id", 0),
+                    "chunk_method": properties.get("chunk_method", ""),
+                    "distance": item.metadata.distance,
+                }
+            )
+            chunks.append(chunk)
+        
+        return chunks
+
     def similarity_search(
         self,
         query_vector: List[float],

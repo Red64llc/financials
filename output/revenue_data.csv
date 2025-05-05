@@ -1,0 +1,3 @@
+period,confidence,unit,source,value,entity_type,entity_subtype,prev_value,growth_rate,annualized_growth
+2023,3.124,Unknown,goog-10-k-2024.pdf,59075640.95454545,revenue,revenue,,,
+2024,4.564,Unknown,goog-10-k-2024.pdf,27036985103.628395,revenue,revenue,59075640.95454545,456.6672324965793,456.6672324965793

@@ -1,0 +1,3 @@
+period,confidence,unit,source,value,entity_type,entity_subtype,prev_value,growth_rate,annualized_growth
+2023,0.706,USD,goog-10-k-2024.pdf,771000000.0,balance_sheet,accounts receivable,,,
+2024,0.668,Unknown,goog-10-k-2024.pdf,7.0,balance_sheet,accounts receivable,771000000.0,-0.999999990920882,-0.999999990920882

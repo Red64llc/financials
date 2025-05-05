@@ -1,0 +1,4 @@
+period,confidence,unit,source,value,entity_type,entity_subtype,prev_value,growth_rate,annualized_growth
+2022,0.5780000000000001,Unknown,goog-10-k-2024.pdf,31.0,profit,income,,,
+2023,3.596,USD,goog-10-k-2024.pdf,148.55061179087875,profit,income,31.0,3.791955219060605,3.791955219060605
+2024,10.096,Unknown,goog-10-k-2024.pdf,16258.178288431065,profit,income,148.55061179087875,108.44538088687524,108.44538088687524

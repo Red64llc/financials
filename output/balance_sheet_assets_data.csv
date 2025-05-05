@@ -1,0 +1,3 @@
+period,confidence,unit,source,value,entity_type,entity_subtype,prev_value,growth_rate,annualized_growth
+2023,0.55,Unknown,goog-10-k-2024.pdf,31.0,balance_sheet,assets,,,
+2024,0.786,Unknown,goog-10-k-2024.pdf,474.0,balance_sheet,assets,31.0,14.290322580645162,14.290322580645162

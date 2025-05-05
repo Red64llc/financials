@@ -1,0 +1,3 @@
+period,confidence,unit,source,value,entity_type,entity_subtype,prev_value,growth_rate,annualized_growth
+2023,6.658,Unknown,goog-10-k-2024.pdf,5888855609.460799,cost,cost,,,
+2024,6.414000000000001,USD,goog-10-k-2024.pdf,4366715196.142812,cost,cost,5888855609.460799,-0.2584781346774028,-0.2584781346774028

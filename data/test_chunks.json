@@ -1,0 +1,52 @@
+[
+    "International revenues, which represent a significant portion of our revenues, are generally transacted in multiple currencies and therefore are affected by fluctuations in foreign currency exchange rates.
+The effect of currency exchange rates on our business is an important factor in understanding period-to-period comparisons. We use non-GAAP constant currency revenues ("constant currency revenues") and non-GAAP percentage change in constant currency revenues ("percentage change in constant currency revenues") for financial and operational decision-making and as a means to evaluate period-to-period comparisons. We believe the presentation of results on a constant currency basis in addition to U.S. Generally Accepted Accounting Principles (GAAP) results helps improve the ability to understand our performance, because it excludes the effects of foreign currency volatility that are not indicative of our core operating results.",
+    "Total constant currency revenues of $352.7 billion for 2024 increased $45.6 billion compared to $307.2 billion in revenues, excluding hedging effect, for 2023.",
+    "EMEA revenue growth was not materially affected by changes in foreign currency exchange rates, as the effect of the U.S. dollar strengthening relative to the Turkish lira was offset by the U.S. dollar weakening relative to the British pound and the euro.",
+    "APAC revenue growth was unfavorably affected by changes in foreign currency exchange rates, primarily due to the U.S. dollar strengthening relative to the Japanese yen.",
+    "Other Americas revenue growth was unfavorably affected by changes in foreign currency exchange rates, primarily due to the U.S. dollar strengthening relative to the Argentine peso and the Brazilian real.",
+    "# Costs and Expenses",
+    "# Cost of Revenues",
+    "2025-05-04 22:18:38,208 - financials.chat.optimized_financial_extractor - INFO - Processing chunk: Constant currency information compares results between periods as if exchange rates had remained constant period over period. We define constant currency revenues as revenues excluding the effect of foreign currency exchange rate movements ("FX Effect") as well as hedging activities, which are recognized at the consolidated level. We use constant currency revenues to determine the constant currency revenue percentage change on a year-on-year basis. Constant currency revenues are calculated by translating current period revenues using prior year comparable period exchange rates, as well as excluding any hedging effects realized in the current period.
+Constant currency revenue percentage change is calculated by determining the change in current period revenues over prior year comparable period revenues where current period foreign currency revenues are translated using prior year comparable period exchange rates and hedging effects are excluded from revenues of both periods.",
+2025-05-04 22:18:38,228 - financials.chat.optimized_financial_extractor - INFO - Processing chunk: Table of Contents
+Alphabet Inc.
+The following table presents the foreign currency exchange effect on international revenues and total revenues (in millions, except percentages):
+# Year Ended December 31, 2024
+
+[TABLE]
+% Change from Prior Period Year Ended December 31, Less FX Constant Currency As Less Hedging Less FX Constant Currency 2023 2024 Effect Revenues Reported Effect Effect Revenues United States $ 146,286 $ 170,447 $ 0 $ 170,447 17 % 0 % 17 % EMEA 91,038 102,127 41 102,086 12 % 0 % 12 % APAC 51,514 56,815 (1,369) 58,184 10 % (3) % 13 % Other Americas 18,320 20,418 (1,608) 22,026 11 % (9) % 20 % Revenues, excluding hedging effect 307,158 349,807 (2,936) 352,743 14 % (1) % 15 % Hedging gains (losses) 236 211 Total revenues(1) $ 307,394 $ 350,018 $ 352,743 14 % 0 % (1) % 15 %
+
+(1)
+- Total constant currency revenues of $352.7 billion for 2024 increased $45.6 billion compared to $307.2 billion in revenues, excluding hedging effect, for 2023.
+2025-05-04 22:18:38,505 - financials.chat.optimized_financial_extractor - INFO - Processing chunk: We generate revenues by delivering relevant, cost-effective online advertising; cloud-based solutions that provide enterprise customers of all sizes with infrastructure, platform services, and applications; sales of other products and services, such as fees received for subscription-based products, apps and in-app purchases, and devices. For additional information on how we recognize revenue, see Note 1 of the Notes to Consolidated Financial Statements included in Item 8 of this Annual Report on Form 10-K.
+In addition to the long-term trends and their financial effect on our business discussed above, fluctuations in our revenues have been and may continue to be affected by a combination of factors, including:
+- changes in foreign currency exchange rates;
+
+-
+
+- changes in pricing, such as those resulting from changes in fee structures, discounts, and customer incentives;
+
+-
+2025-05-04 22:18:38,519 - financials.chat.optimized_financial_extractor - INFO - Processing chunk: Table of Contents
+Alphabet Inc.
+revenues from emerging markets. We expect that our results will continue to be affected by our performance in these markets, particularly as low-cost mobile devices become more available. This trend could affect our revenues as developing markets initially monetize at a lower rate than more mature markets.
+International revenues represent a significant portion of our revenues and are subject to fluctuations in foreign currency exchange rates relative to the U.S. dollar. While we have a foreign exchange risk management program designed to reduce our exposure to these fluctuations, this program does not fully offset their effect on our revenues and earnings.
+# • The revenues that we derive beyond advertising are increasing and may adversely affect our margins.
+2025-05-04 22:18:38,533 - financials.chat.optimized_financial_extractor - INFO - Processing chunk: We designate foreign currency forward and option contracts (including collars) as cash flow hedges to hedge certain forecasted revenue transactions denominated in currencies other than the U.S. dollar. These contracts have maturities of 24 months or less.
+Cash flow hedge amounts included in the assessment of hedge effectiveness are deferred in AOCI and subsequently reclassified to revenue when the hedged item is recognized in earnings. We exclude forward points and time value from our assessment of hedge effectiveness and amortize them on a straight-line basis over the life of the hedging instrument in revenues. The difference between fair value changes of the excluded component and the amount amortized to revenues is recorded in AOCI.
+As of December 31, 2024, the net accumulated gain on our foreign currency cash flow hedges before tax effect was $731 million, which is expected to be reclassified from AOCI into revenues within the next 12 months.
+# Fair Value Hedges
+2025-05-04 22:18:38,546 - financials.chat.optimized_financial_extractor - INFO - Processing chunk: Revenues are recognized when control of the promised goods or services is transferred to our customers, and the collectibility of an amount that we expect in exchange for those goods or services is probable. Sales and other similar taxes are excluded from revenues.
+# Advertising Revenues
+
+We generate advertising revenues primarily by delivering advertising on:
+- • Google Search and other properties, including revenues from traffic generated by search distribution partners who use Google.com as their default search in browsers, toolbars, etc. and other Google owned and operated properties like Gmail, Google Maps, and Google Play;
+
+- • YouTube properties; and
+
+- • Google Network properties, including revenues from Google Network properties participating in AdMob, AdSense, and Google Ad Manager.
+2025-05-04 22:18:38,560 - financials.chat.optimized_financial_extractor - INFO - Processing chunk: If an adverse 10% foreign currency exchange rate change was applied to net monetary assets, liabilities, and commitments denominated in currencies other than the functional currencies at the balance sheet date, it would have resulted in an adverse effect on income before income taxes of approximately $503 million and $135 million as of December 31, 2023 and 2024, respectively, after consideration of the effect of foreign exchange contracts in place for the years ended December 31, 2023 and 2024.
+2025-05-04 22:18:38,627 - financials.chat.optimized_financial_extractor - INFO - Processing chunk: Furthermore, due to shifting economic and political conditions, tax policies, laws, or rates in various jurisdictions may be subject to significant changes in ways that could harm our financial condition and operating results. For example, various jurisdictions around the world have enacted or are considering revenue-based taxes such as digital services taxes and other targeted taxes, which could lead to inconsistent and potentially overlapping international tax
+22.
+2

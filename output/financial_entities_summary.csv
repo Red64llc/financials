@@ -1,0 +1,23 @@
+entity_type,entity_subtype,latest_period,latest_value,latest_unit,growth_rate,data_points
+revenue,all,2024,27036985103.628395,Unknown,456.6672324965793,2
+revenue,sales,2024,8.0,Unknown,-0.9999998720779828,2
+growth,all,2024,4.0,Unknown,,2
+growth,increase,Jan 2025,202.0,Unknown,,3
+cost,costs,2024,1227568743.863965,Unknown,3.4575772969693563,3
+cost,all,2024,4366715196.142812,USD,-0.2584781346774028,2
+cost,expense,2024,8613.84930504755,Unknown,,1
+cost,research and development,2024,4.0,Unknown,,1
+cost,operating expenses,2024,10.183745583038869,Unknown,,1
+profit,income,2024,16258.178288431065,Unknown,108.44538088687524,3
+profit,operating income,2024,2.0,Unknown,1.0,2
+profit,net income,2024,2.0,Unknown,,1
+balance,sheet_equity,2025,8000000000.0,USD,16074202.673114404,3
+balance,sheet_cash,2024,15152370212.092228,Unknown,75011732.72322884,2
+balance,sheet_debt,2024,693.6629441624365,Unknown,21.376224005239884,2
+balance,sheet_assets,2024,474.0,Unknown,14.290322580645162,2
+balance,sheet_liabilities,2024,34.0,Unknown,,1
+balance,sheet_accounts receivable,2024,7.0,Unknown,-0.999999990920882,2
+balance,sheet_accounts payable,2024,1397.0,Unknown,,1
+margin,operating margin,2024,2.0,Unknown,,1
+performance,EPS,2024,2.0,Unknown,,1
+cash,flow_operating cash flow,2024,125300000000.0,USD,,1

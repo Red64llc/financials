@@ -1,0 +1,3 @@
+period,confidence,unit,source,value,entity_type,entity_subtype,prev_value,growth_rate,annualized_growth
+2022,0.522,Unknown,goog-10-k-2024.pdf,31.000000000000004,balance_sheet,debt,,,
+2024,1.9700000000000002,Unknown,goog-10-k-2024.pdf,693.6629441624365,balance_sheet,debt,31.000000000000004,21.376224005239884,21.376224005239884

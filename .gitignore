@@ -74,6 +74,4 @@ test-output/
 # Ruff / lint cache
 .ruff_cache/
 
-# ignoring local data folder
-data/
 

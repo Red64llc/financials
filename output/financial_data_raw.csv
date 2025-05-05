@@ -1,0 +1,577 @@
+entity_type,entity_subtype,dimensions,period,value,unit,confidence,source,growth_applicable,context
+revenue,revenue,{},2024,93200000000.0,USD,0.662,goog-10-k-2024.pdf,True,"As of December 31, 2024, we had $93.2 billion of remaining performance obligations (“revenue backlog”), primarily related to Google Cloud. Revenue bac..."
+revenue,revenue,{},2024,93200000000.0,USD,0.446,goog-10-k-2024.pdf,True,"As of December 31, 2024, we had $93.2 billion of remaining performance obligations (“revenue backlog”), primarily related to Google Cloud. Revenue bac..."
+revenue,revenue,"{'business_unit': ['services'], 'product': ['ure services']}",2024,24000000.0,Unknown,0.22599999999999998,goog-10-k-2024.pdf,True,"As of December 31, 2024, we had $93.2 billion of remaining performance obligations (“revenue backlog”), primarily related to Google Cloud. Revenue bac..."
+revenue,revenue,{},2024,24000000.0,Unknown,0.22599999999999998,goog-10-k-2024.pdf,True,"As of December 31, 2024, we had $93.2 billion of remaining performance obligations (“revenue backlog”), primarily related to Google Cloud. Revenue bac..."
+revenue,revenue,{},2024,24000000.0,Unknown,0.1,goog-10-k-2024.pdf,True,"As of December 31, 2024, we had $93.2 billion of remaining performance obligations (“revenue backlog”), primarily related to Google Cloud. Revenue bac..."
+revenue,revenue,{},2024,24000000.0,Unknown,0.1,goog-10-k-2024.pdf,True,"As of December 31, 2024, we had $93.2 billion of remaining performance obligations (“revenue backlog”), primarily related to Google Cloud. Revenue bac..."
+revenue,revenue,"{'business_unit': ['services'], 'product': ['utilize services']}",2024,24000000.0,Unknown,0.1,goog-10-k-2024.pdf,True,"As of December 31, 2024, we had $93.2 billion of remaining performance obligations (“revenue backlog”), primarily related to Google Cloud. Revenue bac..."
+revenue,revenue,{},2024,24000000.0,Unknown,0.1,goog-10-k-2024.pdf,True,"As of December 31, 2024, we had $93.2 billion of remaining performance obligations (“revenue backlog”), primarily related to Google Cloud. Revenue bac..."
+growth,growth,{},2024,4.0,Unknown,0.866,goog-10-k-2024.pdf,False,"Table of Contents
+Alphabet Inc.
+Google subscriptions, platforms, and devices
+Google subscriptions, platforms, and devices revenues increased $5.7 bill..."
+growth,increase,{},2024,4.0,Unknown,0.73,goog-10-k-2024.pdf,False,"Table of Contents
+Alphabet Inc.
+Google subscriptions, platforms, and devices
+Google subscriptions, platforms, and devices revenues increased $5.7 bill..."
+growth,growth,{},2024,4.0,Unknown,0.538,goog-10-k-2024.pdf,False,"Table of Contents
+Alphabet Inc.
+Google subscriptions, platforms, and devices
+Google subscriptions, platforms, and devices revenues increased $5.7 bill..."
+growth,growth,{'product': ['cloud platform']},2024,4.0,Unknown,0.806,goog-10-k-2024.pdf,False,"Table of Contents
+Alphabet Inc.
+Google subscriptions, platforms, and devices
+Google subscriptions, platforms, and devices revenues increased $5.7 bill..."
+revenue,revenue,{'region': ['emea']},2023,3.0,Unknown,0.858,goog-10-k-2024.pdf,True,"(1)
+- Total constant currency revenues of $352.7 billion for 2024 increased $45.6 billion compared to $307.2 billion in revenues, excluding hedging ef..."
+revenue,revenue,{},2023,3.0,Unknown,0.1,goog-10-k-2024.pdf,True,"(1)
+- Total constant currency revenues of $352.7 billion for 2024 increased $45.6 billion compared to $307.2 billion in revenues, excluding hedging ef..."
+revenue,revenue,{},2023,3.0,Unknown,0.1,goog-10-k-2024.pdf,True,"(1)
+- Total constant currency revenues of $352.7 billion for 2024 increased $45.6 billion compared to $307.2 billion in revenues, excluding hedging ef..."
+cost,costs,{},2023,3.0,Unknown,0.1,goog-10-k-2024.pdf,True,"(1)
+- Total constant currency revenues of $352.7 billion for 2024 increased $45.6 billion compared to $307.2 billion in revenues, excluding hedging ef..."
+cost,cost,{},2023,3.0,Unknown,0.1,goog-10-k-2024.pdf,True,"(1)
+- Total constant currency revenues of $352.7 billion for 2024 increased $45.6 billion compared to $307.2 billion in revenues, excluding hedging ef..."
+growth,growth,{'region': ['emea']},2023,3.0,Unknown,0.8260000000000001,goog-10-k-2024.pdf,False,"(1)
+- Total constant currency revenues of $352.7 billion for 2024 increased $45.6 billion compared to $307.2 billion in revenues, excluding hedging ef..."
+growth,growth,{},2023,3.0,Unknown,0.1,goog-10-k-2024.pdf,False,"(1)
+- Total constant currency revenues of $352.7 billion for 2024 increased $45.6 billion compared to $307.2 billion in revenues, excluding hedging ef..."
+growth,growth,{},2023,3.0,Unknown,0.1,goog-10-k-2024.pdf,False,"(1)
+- Total constant currency revenues of $352.7 billion for 2024 increased $45.6 billion compared to $307.2 billion in revenues, excluding hedging ef..."
+growth,growth,{},2024,4.0,Unknown,0.8340000000000001,goog-10-k-2024.pdf,False,"# Google Cloud
+
+# Other Bets
+
+Hedging gains (losses)
+# Google Services
+
+# Google advertising revenues
+
+Google Search & other
+Google Search & other rev..."
+growth,growth,{},2024,4.0,Unknown,0.454,goog-10-k-2024.pdf,False,"# Google Cloud
+
+# Other Bets
+
+Hedging gains (losses)
+# Google Services
+
+# Google advertising revenues
+
+Google Search & other
+Google Search & other rev..."
+growth,growth,{},2023,4600000000.0,USD,0.3360000000000001,goog-10-k-2024.pdf,False,"# Google Cloud
+
+# Other Bets
+
+Hedging gains (losses)
+# Google Services
+
+# Google advertising revenues
+
+Google Search & other
+Google Search & other rev..."
+growth,growth,{'product': ['advertising products']},2024,4.0,Unknown,0.866,goog-10-k-2024.pdf,False,"# Google Cloud
+
+# Other Bets
+
+Hedging gains (losses)
+# Google Services
+
+# Google advertising revenues
+
+Google Search & other
+Google Search & other rev..."
+revenue,revenue,{},2024,4.0,Unknown,0.81,goog-10-k-2024.pdf,True,"Cost of revenues increased $13.0 billion from 2023 to 2024 due to an increase in other cost of revenues and TAC of $9.0 billion and $4.0 billion, resp..."
+cost,cost,{},2023,13000000000.0,USD,0.754,goog-10-k-2024.pdf,True,"Cost of revenues increased $13.0 billion from 2023 to 2024 due to an increase in other cost of revenues and TAC of $9.0 billion and $4.0 billion, resp..."
+cost,cost,{},2024,9000000000.0,USD,0.778,goog-10-k-2024.pdf,True,"Cost of revenues increased $13.0 billion from 2023 to 2024 due to an increase in other cost of revenues and TAC of $9.0 billion and $4.0 billion, resp..."
+growth,increase,{},2024,4.0,Unknown,0.846,goog-10-k-2024.pdf,False,"Cost of revenues increased $13.0 billion from 2023 to 2024 due to an increase in other cost of revenues and TAC of $9.0 billion and $4.0 billion, resp..."
+growth,increase,{},2023,202.0,Unknown,0.8180000000000001,goog-10-k-2024.pdf,False,"Cost of revenues increased $13.0 billion from 2023 to 2024 due to an increase in other cost of revenues and TAC of $9.0 billion and $4.0 billion, resp..."
+growth,increase,{},2024,4.0,Unknown,0.798,goog-10-k-2024.pdf,False,"Cost of revenues increased $13.0 billion from 2023 to 2024 due to an increase in other cost of revenues and TAC of $9.0 billion and $4.0 billion, resp..."
+growth,growth,{},2023,21.4,Unknown,0.6100000000000001,goog-10-k-2024.pdf,False,"Cost of revenues increased $13.0 billion from 2023 to 2024 due to an increase in other cost of revenues and TAC of $9.0 billion and $4.0 billion, resp..."
+cost,cost,{},2023,202.0,Unknown,0.8140000000000001,goog-10-k-2024.pdf,True,"The increase in other cost of revenues from 2023 to 2024 was primarily due to increases in content acquisition costs, largely for YouTube, depreciatio..."
+cost,costs,{},2024,4.0,Unknown,0.67,goog-10-k-2024.pdf,True,"The increase in other cost of revenues from 2023 to 2024 was primarily due to increases in content acquisition costs, largely for YouTube, depreciatio..."
+cost,expense,{},2024,4.0,Unknown,0.506,goog-10-k-2024.pdf,True,"The increase in other cost of revenues from 2023 to 2024 was primarily due to increases in content acquisition costs, largely for YouTube, depreciatio..."
+cost,research and development,{},2024,4.0,Unknown,0.28600000000000003,goog-10-k-2024.pdf,True,"The increase in other cost of revenues from 2023 to 2024 was primarily due to increases in content acquisition costs, largely for YouTube, depreciatio..."
+growth,increase,{},2023,202.0,Unknown,0.742,goog-10-k-2024.pdf,False,"The increase in other cost of revenues from 2023 to 2024 was primarily due to increases in content acquisition costs, largely for YouTube, depreciatio..."
+revenue,revenue,{},2024,93200000000.0,USD,0.662,goog-10-k-2024.pdf,True,"As of December 31, 2024, we had $93.2 billion of remaining performance obligations (“revenue backlog”), primarily related to Google Cloud. Revenue bac..."
+revenue,revenue,{},2024,93200000000.0,USD,0.446,goog-10-k-2024.pdf,True,"As of December 31, 2024, we had $93.2 billion of remaining performance obligations (“revenue backlog”), primarily related to Google Cloud. Revenue bac..."
+revenue,revenue,"{'business_unit': ['services'], 'product': ['ure services']}",2024,24000000.0,Unknown,0.22599999999999998,goog-10-k-2024.pdf,True,"As of December 31, 2024, we had $93.2 billion of remaining performance obligations (“revenue backlog”), primarily related to Google Cloud. Revenue bac..."
+revenue,revenue,{},2024,24000000.0,Unknown,0.22599999999999998,goog-10-k-2024.pdf,True,"As of December 31, 2024, we had $93.2 billion of remaining performance obligations (“revenue backlog”), primarily related to Google Cloud. Revenue bac..."
+revenue,revenue,{},2024,24000000.0,Unknown,0.1,goog-10-k-2024.pdf,True,"As of December 31, 2024, we had $93.2 billion of remaining performance obligations (“revenue backlog”), primarily related to Google Cloud. Revenue bac..."
+revenue,revenue,{},2024,24000000.0,Unknown,0.1,goog-10-k-2024.pdf,True,"As of December 31, 2024, we had $93.2 billion of remaining performance obligations (“revenue backlog”), primarily related to Google Cloud. Revenue bac..."
+revenue,revenue,"{'business_unit': ['services'], 'product': ['utilize services']}",2024,24000000.0,Unknown,0.1,goog-10-k-2024.pdf,True,"As of December 31, 2024, we had $93.2 billion of remaining performance obligations (“revenue backlog”), primarily related to Google Cloud. Revenue bac..."
+revenue,revenue,{},2024,24000000.0,Unknown,0.1,goog-10-k-2024.pdf,True,"As of December 31, 2024, we had $93.2 billion of remaining performance obligations (“revenue backlog”), primarily related to Google Cloud. Revenue bac..."
+growth,growth,{},2024,4.0,Unknown,0.866,goog-10-k-2024.pdf,False,"Table of Contents
+Alphabet Inc.
+Google subscriptions, platforms, and devices
+Google subscriptions, platforms, and devices revenues increased $5.7 bill..."
+growth,increase,{},2024,4.0,Unknown,0.73,goog-10-k-2024.pdf,False,"Table of Contents
+Alphabet Inc.
+Google subscriptions, platforms, and devices
+Google subscriptions, platforms, and devices revenues increased $5.7 bill..."
+growth,growth,{},2024,4.0,Unknown,0.538,goog-10-k-2024.pdf,False,"Table of Contents
+Alphabet Inc.
+Google subscriptions, platforms, and devices
+Google subscriptions, platforms, and devices revenues increased $5.7 bill..."
+growth,growth,{'product': ['cloud platform']},2024,4.0,Unknown,0.806,goog-10-k-2024.pdf,False,"Table of Contents
+Alphabet Inc.
+Google subscriptions, platforms, and devices
+Google subscriptions, platforms, and devices revenues increased $5.7 bill..."
+cost,cost,{},2023,31.0,Unknown,0.32600000000000007,goog-10-k-2024.pdf,True,"# Cost of Revenues
+
+The following table presents cost of revenues, including TAC (in millions, except percentages):
+[TABLE]
+Year Ended December 31, 20..."
+cost,cost,{},2023,31.0,Unknown,0.514,goog-10-k-2024.pdf,True,"# Cost of Revenues
+
+The following table presents cost of revenues, including TAC (in millions, except percentages):
+[TABLE]
+Year Ended December 31, 20..."
+cost,cost,{},2024,146306.0,USD,0.742,goog-10-k-2024.pdf,True,"# Cost of Revenues
+
+The following table presents cost of revenues, including TAC (in millions, except percentages):
+[TABLE]
+Year Ended December 31, 20..."
+cost,cost,{},2024,42.0,Unknown,0.5880000000000001,goog-10-k-2024.pdf,True,"# Cost of Revenues
+
+The following table presents cost of revenues, including TAC (in millions, except percentages):
+[TABLE]
+Year Ended December 31, 20..."
+cost,cost,{},2024,42.0,Unknown,0.48400000000000004,goog-10-k-2024.pdf,True,"# Cost of Revenues
+
+The following table presents cost of revenues, including TAC (in millions, except percentages):
+[TABLE]
+Year Ended December 31, 20..."
+revenue,revenue,{},2024,4.0,Unknown,0.81,goog-10-k-2024.pdf,True,"Cost of revenues increased $13.0 billion from 2023 to 2024 due to an increase in other cost of revenues and TAC of $9.0 billion and $4.0 billion, resp..."
+cost,cost,{},2023,13000000000.0,USD,0.754,goog-10-k-2024.pdf,True,"Cost of revenues increased $13.0 billion from 2023 to 2024 due to an increase in other cost of revenues and TAC of $9.0 billion and $4.0 billion, resp..."
+cost,cost,{},2024,9000000000.0,USD,0.778,goog-10-k-2024.pdf,True,"Cost of revenues increased $13.0 billion from 2023 to 2024 due to an increase in other cost of revenues and TAC of $9.0 billion and $4.0 billion, resp..."
+growth,increase,{},2024,4.0,Unknown,0.846,goog-10-k-2024.pdf,False,"Cost of revenues increased $13.0 billion from 2023 to 2024 due to an increase in other cost of revenues and TAC of $9.0 billion and $4.0 billion, resp..."
+growth,increase,{},2023,202.0,Unknown,0.8180000000000001,goog-10-k-2024.pdf,False,"Cost of revenues increased $13.0 billion from 2023 to 2024 due to an increase in other cost of revenues and TAC of $9.0 billion and $4.0 billion, resp..."
+growth,increase,{},2024,4.0,Unknown,0.798,goog-10-k-2024.pdf,False,"Cost of revenues increased $13.0 billion from 2023 to 2024 due to an increase in other cost of revenues and TAC of $9.0 billion and $4.0 billion, resp..."
+growth,growth,{},2023,21.4,Unknown,0.6100000000000001,goog-10-k-2024.pdf,False,"Cost of revenues increased $13.0 billion from 2023 to 2024 due to an increase in other cost of revenues and TAC of $9.0 billion and $4.0 billion, resp..."
+profit,income,{},2024,4.0,Unknown,0.726,goog-10-k-2024.pdf,True,"We have audited the accompanying consolidated balance sheets of Alphabet Inc. (the Company) as of December 31, 2023 and 2024, the related consolidated..."
+profit,income,{},2024,4.0,Unknown,0.638,goog-10-k-2024.pdf,True,"We have audited the accompanying consolidated balance sheets of Alphabet Inc. (the Company) as of December 31, 2023 and 2024, the related consolidated..."
+balance_sheet,equity,{},2024,31.0,Unknown,0.5780000000000001,goog-10-k-2024.pdf,True,"We have audited the accompanying consolidated balance sheets of Alphabet Inc. (the Company) as of December 31, 2023 and 2024, the related consolidated..."
+balance_sheet,cash,{},2024,31.0,Unknown,0.622,goog-10-k-2024.pdf,True,"We have audited the accompanying consolidated balance sheets of Alphabet Inc. (the Company) as of December 31, 2023 and 2024, the related consolidated..."
+balance_sheet,cash,{},2024,4.0,Unknown,0.714,goog-10-k-2024.pdf,True,"We have audited the accompanying consolidated balance sheets of Alphabet Inc. (the Company) as of December 31, 2023 and 2024, the related consolidated..."
+cost,cost,{},2023,202.0,Unknown,0.442,goog-10-k-2024.pdf,True,The following table presents changes in monetization metrics for Google Search & other revenues (paid clicks and cost-per-click) and Google Network re...
+cost,cost,{},2023,202.0,Unknown,0.686,goog-10-k-2024.pdf,True,The following table presents changes in monetization metrics for Google Search & other revenues (paid clicks and cost-per-click) and Google Network re...
+cost,cost,{},2024,5.0,Unknown,0.772,goog-10-k-2024.pdf,True,The following table presents changes in monetization metrics for Google Search & other revenues (paid clicks and cost-per-click) and Google Network re...
+revenue,revenue,{},2024,4.0,Unknown,0.81,goog-10-k-2024.pdf,True,"Cost of revenues increased $13.0 billion from 2023 to 2024 due to an increase in other cost of revenues and TAC of $9.0 billion and $4.0 billion, resp..."
+cost,cost,{},2023,13000000000.0,USD,0.754,goog-10-k-2024.pdf,True,"Cost of revenues increased $13.0 billion from 2023 to 2024 due to an increase in other cost of revenues and TAC of $9.0 billion and $4.0 billion, resp..."
+cost,cost,{},2024,9000000000.0,USD,0.778,goog-10-k-2024.pdf,True,"Cost of revenues increased $13.0 billion from 2023 to 2024 due to an increase in other cost of revenues and TAC of $9.0 billion and $4.0 billion, resp..."
+growth,increase,{},2024,4.0,Unknown,0.846,goog-10-k-2024.pdf,False,"Cost of revenues increased $13.0 billion from 2023 to 2024 due to an increase in other cost of revenues and TAC of $9.0 billion and $4.0 billion, resp..."
+growth,increase,{},2023,202.0,Unknown,0.8180000000000001,goog-10-k-2024.pdf,False,"Cost of revenues increased $13.0 billion from 2023 to 2024 due to an increase in other cost of revenues and TAC of $9.0 billion and $4.0 billion, resp..."
+growth,increase,{},2024,4.0,Unknown,0.798,goog-10-k-2024.pdf,False,"Cost of revenues increased $13.0 billion from 2023 to 2024 due to an increase in other cost of revenues and TAC of $9.0 billion and $4.0 billion, resp..."
+growth,growth,{},2023,21.4,Unknown,0.6100000000000001,goog-10-k-2024.pdf,False,"Cost of revenues increased $13.0 billion from 2023 to 2024 due to an increase in other cost of revenues and TAC of $9.0 billion and $4.0 billion, resp..."
+profit,income,{},2023,202.0,USD,0.8240000000000001,goog-10-k-2024.pdf,True,"income (loss) $ $ $ 2023 2024 24,048 $ 23,466 86,868 72,191 110,916 95,657 47,964 52,340 12,650 15,714 171,530 163,711 31,008 37,982 12,169 17,180 134..."
+cost,cost,{},2023,202.0,Unknown,0.8140000000000001,goog-10-k-2024.pdf,True,"The increase in other cost of revenues from 2023 to 2024 was primarily due to increases in content acquisition costs, largely for YouTube, depreciatio..."
+cost,costs,{},2024,4.0,Unknown,0.67,goog-10-k-2024.pdf,True,"The increase in other cost of revenues from 2023 to 2024 was primarily due to increases in content acquisition costs, largely for YouTube, depreciatio..."
+cost,expense,{},2024,4.0,Unknown,0.506,goog-10-k-2024.pdf,True,"The increase in other cost of revenues from 2023 to 2024 was primarily due to increases in content acquisition costs, largely for YouTube, depreciatio..."
+cost,research and development,{},2024,4.0,Unknown,0.28600000000000003,goog-10-k-2024.pdf,True,"The increase in other cost of revenues from 2023 to 2024 was primarily due to increases in content acquisition costs, largely for YouTube, depreciatio..."
+growth,increase,{},2023,202.0,Unknown,0.742,goog-10-k-2024.pdf,False,"The increase in other cost of revenues from 2023 to 2024 was primarily due to increases in content acquisition costs, largely for YouTube, depreciatio..."
+balance_sheet,equity,{},2024,4.0,Unknown,0.1,goog-10-k-2024.pdf,True,"[TABLE]
+As of December 31, As of December 31, 2023 2024 2023 2024 Risk category - interest rate $ 296 $ 208 $ 271 $ 230
+
+Actual future gains and losse..."
+revenue,revenue,{'product': ['revenue service']},2023,202.0,Unknown,0.742,goog-10-k-2024.pdf,True,"The following table presents provision for income taxes (in millions, except effective tax rate):
+[TABLE]
+Year Ended December 31, 2023 2024 Income bef..."
+profit,income,{},2023,31.0,Unknown,0.562,goog-10-k-2024.pdf,True,"The following table presents provision for income taxes (in millions, except effective tax rate):
+[TABLE]
+Year Ended December 31, 2023 2024 Income bef..."
+profit,income,{},2024,4.0,Unknown,0.886,goog-10-k-2024.pdf,True,"The following table presents provision for income taxes (in millions, except effective tax rate):
+[TABLE]
+Year Ended December 31, 2023 2024 Income bef..."
+profit,income,{},2024,85717.0,USD,0.808,goog-10-k-2024.pdf,True,"The following table presents provision for income taxes (in millions, except effective tax rate):
+[TABLE]
+Year Ended December 31, 2023 2024 Income bef..."
+profit,income,{},2024,11922.0,USD,0.716,goog-10-k-2024.pdf,True,"The following table presents provision for income taxes (in millions, except effective tax rate):
+[TABLE]
+Year Ended December 31, 2023 2024 Income bef..."
+growth,increase,{},2024,4.0,Unknown,0.862,goog-10-k-2024.pdf,False,"The following table presents provision for income taxes (in millions, except effective tax rate):
+[TABLE]
+Year Ended December 31, 2023 2024 Income bef..."
+revenue,revenue,{},2024,1161.0,Unknown,0.1,goog-10-k-2024.pdf,True,"Year Ended December 31, 2022 2023 2024 Operating activities $ 59,972 $ 73,795 $ 100,118 Depreciation of property and equipment 13,475 11,946 15,311 St..."
+revenue,revenue,{},2024,367.0,Unknown,0.1,goog-10-k-2024.pdf,True,"Year Ended December 31, 2022 2023 2024 Operating activities $ 59,972 $ 73,795 $ 100,118 Depreciation of property and equipment 13,475 11,946 15,311 St..."
+revenue,sales,{},2024,86679.0,Unknown,0.1,goog-10-k-2024.pdf,True,"Year Ended December 31, 2022 2023 2024 Operating activities $ 59,972 $ 73,795 $ 100,118 Depreciation of property and equipment 13,475 11,946 15,311 St..."
+cost,expense,{},2024,19362.0,Unknown,0.6080000000000001,goog-10-k-2024.pdf,True,"Year Ended December 31, 2022 2023 2024 Operating activities $ 59,972 $ 73,795 $ 100,118 Depreciation of property and equipment 13,475 11,946 15,311 St..."
+profit,income,{},2024,8081.0,Unknown,0.518,goog-10-k-2024.pdf,True,"Year Ended December 31, 2022 2023 2024 Operating activities $ 59,972 $ 73,795 $ 100,118 Depreciation of property and equipment 13,475 11,946 15,311 St..."
+profit,income,{},2024,5891.0,Unknown,0.1,goog-10-k-2024.pdf,True,"Year Ended December 31, 2022 2023 2024 Operating activities $ 59,972 $ 73,795 $ 100,118 Depreciation of property and equipment 13,475 11,946 15,311 St..."
+balance_sheet,debt,{},2024,5257.0,Unknown,0.398,goog-10-k-2024.pdf,True,"Year Ended December 31, 2022 2023 2024 Operating activities $ 59,972 $ 73,795 $ 100,118 Depreciation of property and equipment 13,475 11,946 15,311 St..."
+balance_sheet,equity,{},2024,5519.0,Unknown,0.38,goog-10-k-2024.pdf,True,"Year Ended December 31, 2022 2023 2024 Operating activities $ 59,972 $ 73,795 $ 100,118 Depreciation of property and equipment 13,475 11,946 15,311 St..."
+balance_sheet,assets,{},2024,3419.0,Unknown,0.238,goog-10-k-2024.pdf,True,"Year Ended December 31, 2022 2023 2024 Operating activities $ 59,972 $ 73,795 $ 100,118 Depreciation of property and equipment 13,475 11,946 15,311 St..."
+balance_sheet,liabilities,{},2024,3419.0,Unknown,0.19400000000000006,goog-10-k-2024.pdf,True,"Year Ended December 31, 2022 2023 2024 Operating activities $ 59,972 $ 73,795 $ 100,118 Depreciation of property and equipment 13,475 11,946 15,311 St..."
+balance_sheet,accounts receivable,{},2024,2317.0,Unknown,0.10799999999999998,goog-10-k-2024.pdf,True,"Year Ended December 31, 2022 2023 2024 Operating activities $ 59,972 $ 73,795 $ 100,118 Depreciation of property and equipment 13,475 11,946 15,311 St..."
+balance_sheet,assets,{},2024,5046.0,Unknown,0.1,goog-10-k-2024.pdf,True,"Year Ended December 31, 2022 2023 2024 Operating activities $ 59,972 $ 73,795 $ 100,118 Depreciation of property and equipment 13,475 11,946 15,311 St..."
+balance_sheet,accounts payable,{},2024,1397.0,Unknown,0.1,goog-10-k-2024.pdf,True,"Year Ended December 31, 2022 2023 2024 Operating activities $ 59,972 $ 73,795 $ 100,118 Depreciation of property and equipment 13,475 11,946 15,311 St..."
+balance_sheet,liabilities,{},2024,3915.0,Unknown,0.1,goog-10-k-2024.pdf,True,"Year Ended December 31, 2022 2023 2024 Operating activities $ 59,972 $ 73,795 $ 100,118 Depreciation of property and equipment 13,475 11,946 15,311 St..."
+balance_sheet,cash,{},2024,1043.0,Unknown,0.1,goog-10-k-2024.pdf,True,"Year Ended December 31, 2022 2023 2024 Operating activities $ 59,972 $ 73,795 $ 100,118 Depreciation of property and equipment 13,475 11,946 15,311 St..."
+growth,growth,{},2024,4.0,Unknown,0.8340000000000001,goog-10-k-2024.pdf,False,"# Google Cloud
+
+# Other Bets
+
+Hedging gains (losses)
+# Google Services
+
+# Google advertising revenues
+
+Google Search & other
+Google Search & other rev..."
+growth,growth,{},2024,4.0,Unknown,0.454,goog-10-k-2024.pdf,False,"# Google Cloud
+
+# Other Bets
+
+Hedging gains (losses)
+# Google Services
+
+# Google advertising revenues
+
+Google Search & other
+Google Search & other rev..."
+growth,growth,{},2023,4600000000.0,USD,0.3360000000000001,goog-10-k-2024.pdf,False,"# Google Cloud
+
+# Other Bets
+
+Hedging gains (losses)
+# Google Services
+
+# Google advertising revenues
+
+Google Search & other
+Google Search & other rev..."
+growth,growth,{'product': ['advertising products']},2024,4.0,Unknown,0.866,goog-10-k-2024.pdf,False,"# Google Cloud
+
+# Other Bets
+
+Hedging gains (losses)
+# Google Services
+
+# Google advertising revenues
+
+Google Search & other
+Google Search & other rev..."
+growth,increase,{},2024,202.0,Unknown,0.8140000000000001,goog-10-k-2024.pdf,False,"During the years ended December 31, 2023 and 2024, we spent $32.3 billion and $52.5 billion on capital expenditures, respectively. We expect to increa..."
+growth,growth,{},2024,4.0,Unknown,0.406,goog-10-k-2024.pdf,False,"During the years ended December 31, 2023 and 2024, we spent $32.3 billion and $52.5 billion on capital expenditures, respectively. We expect to increa..."
+balance_sheet,assets,{},2023,31.0,Unknown,0.55,goog-10-k-2024.pdf,True,"During the years ended December 31, 2023 and 2024, we spent $32.3 billion and $52.5 billion on capital expenditures, respectively. We expect to increa..."
+profit,income,{},2024,4.0,Unknown,0.726,goog-10-k-2024.pdf,True,"We have audited the accompanying consolidated balance sheets of Alphabet Inc. (the Company) as of December 31, 2023 and 2024, the related consolidated..."
+profit,income,{},2024,4.0,Unknown,0.638,goog-10-k-2024.pdf,True,"We have audited the accompanying consolidated balance sheets of Alphabet Inc. (the Company) as of December 31, 2023 and 2024, the related consolidated..."
+balance_sheet,equity,{},2024,31.0,Unknown,0.5780000000000001,goog-10-k-2024.pdf,True,"We have audited the accompanying consolidated balance sheets of Alphabet Inc. (the Company) as of December 31, 2023 and 2024, the related consolidated..."
+balance_sheet,cash,{},2024,31.0,Unknown,0.622,goog-10-k-2024.pdf,True,"We have audited the accompanying consolidated balance sheets of Alphabet Inc. (the Company) as of December 31, 2023 and 2024, the related consolidated..."
+balance_sheet,cash,{},2024,4.0,Unknown,0.714,goog-10-k-2024.pdf,True,"We have audited the accompanying consolidated balance sheets of Alphabet Inc. (the Company) as of December 31, 2023 and 2024, the related consolidated..."
+profit,income,{},2023,202.0,USD,0.8240000000000001,goog-10-k-2024.pdf,True,"income (loss) $ $ $ 2023 2024 24,048 $ 23,466 86,868 72,191 110,916 95,657 47,964 52,340 12,650 15,714 171,530 163,711 31,008 37,982 12,169 17,180 134..."
+revenue,revenue,{},2024,1161.0,Unknown,0.1,goog-10-k-2024.pdf,True,"Year Ended December 31, 2022 2023 2024 Operating activities $ 59,972 $ 73,795 $ 100,118 Depreciation of property and equipment 13,475 11,946 15,311 St..."
+revenue,revenue,{},2024,367.0,Unknown,0.1,goog-10-k-2024.pdf,True,"Year Ended December 31, 2022 2023 2024 Operating activities $ 59,972 $ 73,795 $ 100,118 Depreciation of property and equipment 13,475 11,946 15,311 St..."
+revenue,sales,{},2024,86679.0,Unknown,0.1,goog-10-k-2024.pdf,True,"Year Ended December 31, 2022 2023 2024 Operating activities $ 59,972 $ 73,795 $ 100,118 Depreciation of property and equipment 13,475 11,946 15,311 St..."
+cost,expense,{},2024,19362.0,Unknown,0.6080000000000001,goog-10-k-2024.pdf,True,"Year Ended December 31, 2022 2023 2024 Operating activities $ 59,972 $ 73,795 $ 100,118 Depreciation of property and equipment 13,475 11,946 15,311 St..."
+profit,income,{},2024,8081.0,Unknown,0.518,goog-10-k-2024.pdf,True,"Year Ended December 31, 2022 2023 2024 Operating activities $ 59,972 $ 73,795 $ 100,118 Depreciation of property and equipment 13,475 11,946 15,311 St..."
+profit,income,{},2024,5891.0,Unknown,0.1,goog-10-k-2024.pdf,True,"Year Ended December 31, 2022 2023 2024 Operating activities $ 59,972 $ 73,795 $ 100,118 Depreciation of property and equipment 13,475 11,946 15,311 St..."
+balance_sheet,debt,{},2024,5257.0,Unknown,0.398,goog-10-k-2024.pdf,True,"Year Ended December 31, 2022 2023 2024 Operating activities $ 59,972 $ 73,795 $ 100,118 Depreciation of property and equipment 13,475 11,946 15,311 St..."
+balance_sheet,equity,{},2024,5519.0,Unknown,0.38,goog-10-k-2024.pdf,True,"Year Ended December 31, 2022 2023 2024 Operating activities $ 59,972 $ 73,795 $ 100,118 Depreciation of property and equipment 13,475 11,946 15,311 St..."
+balance_sheet,assets,{},2024,3419.0,Unknown,0.238,goog-10-k-2024.pdf,True,"Year Ended December 31, 2022 2023 2024 Operating activities $ 59,972 $ 73,795 $ 100,118 Depreciation of property and equipment 13,475 11,946 15,311 St..."
+balance_sheet,liabilities,{},2024,3419.0,Unknown,0.19400000000000006,goog-10-k-2024.pdf,True,"Year Ended December 31, 2022 2023 2024 Operating activities $ 59,972 $ 73,795 $ 100,118 Depreciation of property and equipment 13,475 11,946 15,311 St..."
+balance_sheet,accounts receivable,{},2024,2317.0,Unknown,0.10799999999999998,goog-10-k-2024.pdf,True,"Year Ended December 31, 2022 2023 2024 Operating activities $ 59,972 $ 73,795 $ 100,118 Depreciation of property and equipment 13,475 11,946 15,311 St..."
+balance_sheet,assets,{},2024,5046.0,Unknown,0.1,goog-10-k-2024.pdf,True,"Year Ended December 31, 2022 2023 2024 Operating activities $ 59,972 $ 73,795 $ 100,118 Depreciation of property and equipment 13,475 11,946 15,311 St..."
+balance_sheet,accounts payable,{},2024,1397.0,Unknown,0.1,goog-10-k-2024.pdf,True,"Year Ended December 31, 2022 2023 2024 Operating activities $ 59,972 $ 73,795 $ 100,118 Depreciation of property and equipment 13,475 11,946 15,311 St..."
+balance_sheet,liabilities,{},2024,3915.0,Unknown,0.1,goog-10-k-2024.pdf,True,"Year Ended December 31, 2022 2023 2024 Operating activities $ 59,972 $ 73,795 $ 100,118 Depreciation of property and equipment 13,475 11,946 15,311 St..."
+balance_sheet,cash,{},2024,1043.0,Unknown,0.1,goog-10-k-2024.pdf,True,"Year Ended December 31, 2022 2023 2024 Operating activities $ 59,972 $ 73,795 $ 100,118 Depreciation of property and equipment 13,475 11,946 15,311 St..."
+cost,expense,{},2024,1424.0,USD,0.392,goog-10-k-2024.pdf,True,"Table of Contents
+Alphabet Inc.
+# Executive Overview
+
+The following table summarizes our consolidated financial results (in millions, except for per s..."
+cost,operating expenses,{},2024,39.0,Unknown,0.1,goog-10-k-2024.pdf,True,"Table of Contents
+Alphabet Inc.
+# Executive Overview
+
+The following table summarizes our consolidated financial results (in millions, except for per s..."
+profit,income,{},2024,5.0,Unknown,0.41400000000000003,goog-10-k-2024.pdf,True,"Table of Contents
+Alphabet Inc.
+# Executive Overview
+
+The following table summarizes our consolidated financial results (in millions, except for per s..."
+profit,operating income,{},2024,2.0,Unknown,0.1,goog-10-k-2024.pdf,True,"Table of Contents
+Alphabet Inc.
+# Executive Overview
+
+The following table summarizes our consolidated financial results (in millions, except for per s..."
+profit,net income,{},2024,2.0,Unknown,0.1,goog-10-k-2024.pdf,True,"Table of Contents
+Alphabet Inc.
+# Executive Overview
+
+The following table summarizes our consolidated financial results (in millions, except for per s..."
+margin,operating margin,{},2024,2.0,Unknown,0.1,goog-10-k-2024.pdf,True,"Table of Contents
+Alphabet Inc.
+# Executive Overview
+
+The following table summarizes our consolidated financial results (in millions, except for per s..."
+performance,EPS,{},2024,2.0,Unknown,0.1,goog-10-k-2024.pdf,True,"Table of Contents
+Alphabet Inc.
+# Executive Overview
+
+The following table summarizes our consolidated financial results (in millions, except for per s..."
+cost,costs,{},2024,4500000000.0,USD,0.754,goog-10-k-2024.pdf,True,"For the years ended December 31, 2023 and 2024, our operating lease expenses (including variable lease costs) were $4.5 billion and $4.7 billion, resp..."
+cost,costs,{},2023,504000000.0,USD,0.73,goog-10-k-2024.pdf,True,"For the years ended December 31, 2023 and 2024, our operating lease expenses (including variable lease costs) were $4.5 billion and $4.7 billion, resp..."
+revenue,sales,{},2023,31.0,Unknown,0.526,goog-10-k-2024.pdf,True,"The following table presents sales and marketing expenses (in millions, except percentages):
+[TABLE]
+Year Ended December 31, 2023 2024 $ 27,917 $ 27,8..."
+revenue,sales,{},2024,8.0,Unknown,0.8160000000000001,goog-10-k-2024.pdf,True,"The following table presents sales and marketing expenses (in millions, except percentages):
+[TABLE]
+Year Ended December 31, 2023 2024 $ 27,917 $ 27,8..."
+revenue,sales,{},2024,8.0,Unknown,0.6880000000000001,goog-10-k-2024.pdf,True,"The following table presents sales and marketing expenses (in millions, except percentages):
+[TABLE]
+Year Ended December 31, 2023 2024 $ 27,917 $ 27,8..."
+revenue,sales,{},2023,109000000.0,USD,0.708,goog-10-k-2024.pdf,True,"The following table presents sales and marketing expenses (in millions, except percentages):
+[TABLE]
+Year Ended December 31, 2023 2024 $ 27,917 $ 27,8..."
+cash_flow,operating cash flow,{},2024,125300000000.0,USD,0.71,goog-10-k-2024.pdf,True,"- 
+
+- 
+
+- Employee severance and related charges for the year ended December 31, 2024 were $1.0 billion, a decrease of $1.1 billion as compared to the..."
+balance_sheet,cash,{},2024,125300000000.0,USD,0.75,goog-10-k-2024.pdf,True,"- 
+
+- 
+
+- Employee severance and related charges for the year ended December 31, 2024 were $1.0 billion, a decrease of $1.1 billion as compared to the..."
+balance_sheet,accounts receivable,{},2024,7.0,Unknown,0.668,goog-10-k-2024.pdf,True,"2025
+2026
+2027
+2028
+2029
+Total
+# Credit Facility
+
+As of December 31, 2024, we had $10.0 billion of revolving credit facilities, of which $4.0 billion ..."
+balance_sheet,accounts receivable,{},2023,771000000.0,USD,0.706,goog-10-k-2024.pdf,True,"2025
+2026
+2027
+2028
+2029
+Total
+# Credit Facility
+
+As of December 31, 2024, we had $10.0 billion of revolving credit facilities, of which $4.0 billion ..."
+profit,income,{},2024,4.0,Unknown,0.726,goog-10-k-2024.pdf,True,"Table of Contents
+Alphabet Inc.
+expenses. Additionally, a decrease in the 2024 U.S. federal Foreign Derived Intangible Income tax deduction contribute..."
+profit,income,{},2024,202.0,Unknown,0.786,goog-10-k-2024.pdf,True,"Table of Contents
+Alphabet Inc.
+expenses. Additionally, a decrease in the 2024 U.S. federal Foreign Derived Intangible Income tax deduction contribute..."
+growth,increase,{},2024,4.0,Unknown,0.5700000000000001,goog-10-k-2024.pdf,False,"Table of Contents
+Alphabet Inc.
+expenses. Additionally, a decrease in the 2024 U.S. federal Foreign Derived Intangible Income tax deduction contribute..."
+growth,increase,{},2024,202.0,Unknown,0.658,goog-10-k-2024.pdf,False,"Table of Contents
+Alphabet Inc.
+expenses. Additionally, a decrease in the 2024 U.S. federal Foreign Derived Intangible Income tax deduction contribute..."
+balance_sheet,cash,{},2024,4.0,Unknown,0.734,goog-10-k-2024.pdf,True,"Table of Contents
+Alphabet Inc.
+expenses. Additionally, a decrease in the 2024 U.S. federal Foreign Derived Intangible Income tax deduction contribute..."
+balance_sheet,cash,{},2024,4.0,Unknown,0.71,goog-10-k-2024.pdf,True,"Table of Contents
+Alphabet Inc.
+expenses. Additionally, a decrease in the 2024 U.S. federal Foreign Derived Intangible Income tax deduction contribute..."
+revenue,revenue,{'product': ['revenue service']},2023,202.0,Unknown,0.742,goog-10-k-2024.pdf,True,"The following table presents provision for income taxes (in millions, except effective tax rate):
+[TABLE]
+Year Ended December 31, 2023 2024 Income bef..."
+profit,income,{},2023,31.0,Unknown,0.562,goog-10-k-2024.pdf,True,"The following table presents provision for income taxes (in millions, except effective tax rate):
+[TABLE]
+Year Ended December 31, 2023 2024 Income bef..."
+profit,income,{},2024,4.0,Unknown,0.886,goog-10-k-2024.pdf,True,"The following table presents provision for income taxes (in millions, except effective tax rate):
+[TABLE]
+Year Ended December 31, 2023 2024 Income bef..."
+profit,income,{},2024,85717.0,USD,0.808,goog-10-k-2024.pdf,True,"The following table presents provision for income taxes (in millions, except effective tax rate):
+[TABLE]
+Year Ended December 31, 2023 2024 Income bef..."
+profit,income,{},2024,11922.0,USD,0.716,goog-10-k-2024.pdf,True,"The following table presents provision for income taxes (in millions, except effective tax rate):
+[TABLE]
+Year Ended December 31, 2023 2024 Income bef..."
+growth,increase,{},2024,4.0,Unknown,0.862,goog-10-k-2024.pdf,False,"The following table presents provision for income taxes (in millions, except effective tax rate):
+[TABLE]
+Year Ended December 31, 2023 2024 Income bef..."
+balance_sheet,equity,{},2024,4.0,Unknown,0.1,goog-10-k-2024.pdf,True,"[TABLE]
+As of December 31, As of December 31, 2023 2024 2023 2024 Risk category - interest rate $ 296 $ 208 $ 271 $ 230
+
+Actual future gains and losse..."
+revenue,revenue,{},2023,236000000.0,USD,0.782,goog-10-k-2024.pdf,True,"Operating income (loss):
+- (1) In addition to the costs included in Alphabet-level activities, hedging gains (losses) related to revenue were $236 mil..."
+cost,costs,{},2023,1.0,Unknown,0.6060000000000001,goog-10-k-2024.pdf,True,"Operating income (loss):
+- (1) In addition to the costs included in Alphabet-level activities, hedging gains (losses) related to revenue were $236 mil..."
+profit,operating income,{},2023,1.0,Unknown,0.494,goog-10-k-2024.pdf,True,"Operating income (loss):
+- (1) In addition to the costs included in Alphabet-level activities, hedging gains (losses) related to revenue were $236 mil..."
+cost,operating expenses,{},2024,4.0,Unknown,0.466,goog-10-k-2024.pdf,True,"Net cash provided by operating activities increased from 2023 to 2024 due to an increase in cash received from customers, partially offset by an incre..."
+growth,increase,{},2024,4.0,Unknown,0.846,goog-10-k-2024.pdf,False,"Net cash provided by operating activities increased from 2023 to 2024 due to an increase in cash received from customers, partially offset by an incre..."
+growth,increase,{},2024,4.0,Unknown,0.5860000000000001,goog-10-k-2024.pdf,False,"Net cash provided by operating activities increased from 2023 to 2024 due to an increase in cash received from customers, partially offset by an incre..."
+balance_sheet,cash,{},2023,202.0,Unknown,0.6900000000000001,goog-10-k-2024.pdf,True,"Net cash provided by operating activities increased from 2023 to 2024 due to an increase in cash received from customers, partially offset by an incre..."
+balance_sheet,cash,{},2024,4.0,Unknown,0.798,goog-10-k-2024.pdf,True,"Net cash provided by operating activities increased from 2023 to 2024 due to an increase in cash received from customers, partially offset by an incre..."
+balance_sheet,cash,{},2024,4.0,Unknown,0.538,goog-10-k-2024.pdf,True,"Net cash provided by operating activities increased from 2023 to 2024 due to an increase in cash received from customers, partially offset by an incre..."
+balance_sheet,cash,{},2024,4.0,Unknown,0.29400000000000004,goog-10-k-2024.pdf,True,"Net cash provided by operating activities increased from 2023 to 2024 due to an increase in cash received from customers, partially offset by an incre..."
+cost,cost,{},2023,202.0,Unknown,0.8140000000000001,goog-10-k-2024.pdf,True,"The increase in other cost of revenues from 2023 to 2024 was primarily due to increases in content acquisition costs, largely for YouTube, depreciatio..."
+cost,costs,{},2024,4.0,Unknown,0.67,goog-10-k-2024.pdf,True,"The increase in other cost of revenues from 2023 to 2024 was primarily due to increases in content acquisition costs, largely for YouTube, depreciatio..."
+cost,expense,{},2024,4.0,Unknown,0.506,goog-10-k-2024.pdf,True,"The increase in other cost of revenues from 2023 to 2024 was primarily due to increases in content acquisition costs, largely for YouTube, depreciatio..."
+cost,research and development,{},2024,4.0,Unknown,0.28600000000000003,goog-10-k-2024.pdf,True,"The increase in other cost of revenues from 2023 to 2024 was primarily due to increases in content acquisition costs, largely for YouTube, depreciatio..."
+growth,increase,{},2023,202.0,Unknown,0.742,goog-10-k-2024.pdf,False,"The increase in other cost of revenues from 2023 to 2024 was primarily due to increases in content acquisition costs, largely for YouTube, depreciatio..."
+cost,costs,{},2022,31.0,Unknown,0.634,goog-10-k-2024.pdf,True,"87
+- (1) The balances as of December 31, 2023 and 2024 were related to derivatives allowed to be net settled in accordance with our master netting agr..."
+cost,cost,{},2024,508.0,Unknown,0.646,goog-10-k-2024.pdf,True,"87
+- (1) The balances as of December 31, 2023 and 2024 were related to derivatives allowed to be net settled in accordance with our master netting agr..."
+cost,cost,{},2024,4246.0,USD,0.554,goog-10-k-2024.pdf,True,"87
+- (1) The balances as of December 31, 2023 and 2024 were related to derivatives allowed to be net settled in accordance with our master netting agr..."
+cost,cost,{},2024,5173.0,USD,0.42200000000000004,goog-10-k-2024.pdf,True,"87
+- (1) The balances as of December 31, 2023 and 2024 were related to derivatives allowed to be net settled in accordance with our master netting agr..."
+cost,cost,{},2024,5173.0,USD,0.33799999999999997,goog-10-k-2024.pdf,True,"87
+- (1) The balances as of December 31, 2023 and 2024 were related to derivatives allowed to be net settled in accordance with our master netting agr..."
+cost,cost,{},2024,5173.0,USD,0.242,goog-10-k-2024.pdf,True,"87
+- (1) The balances as of December 31, 2023 and 2024 were related to derivatives allowed to be net settled in accordance with our master netting agr..."
+balance_sheet,assets,{},2024,474.0,Unknown,0.786,goog-10-k-2024.pdf,True,"87
+- (1) The balances as of December 31, 2023 and 2024 were related to derivatives allowed to be net settled in accordance with our master netting agr..."
+balance_sheet,liabilities,{},2024,34.0,Unknown,0.702,goog-10-k-2024.pdf,True,"87
+- (1) The balances as of December 31, 2023 and 2024 were related to derivatives allowed to be net settled in accordance with our master netting agr..."
+revenue,revenue,{},2024,4.0,Unknown,0.81,goog-10-k-2024.pdf,True,"Cost of revenues increased $13.0 billion from 2023 to 2024 due to an increase in other cost of revenues and TAC of $9.0 billion and $4.0 billion, resp..."
+cost,cost,{},2023,13000000000.0,USD,0.754,goog-10-k-2024.pdf,True,"Cost of revenues increased $13.0 billion from 2023 to 2024 due to an increase in other cost of revenues and TAC of $9.0 billion and $4.0 billion, resp..."
+cost,cost,{},2024,9000000000.0,USD,0.778,goog-10-k-2024.pdf,True,"Cost of revenues increased $13.0 billion from 2023 to 2024 due to an increase in other cost of revenues and TAC of $9.0 billion and $4.0 billion, resp..."
+growth,increase,{},2024,4.0,Unknown,0.846,goog-10-k-2024.pdf,False,"Cost of revenues increased $13.0 billion from 2023 to 2024 due to an increase in other cost of revenues and TAC of $9.0 billion and $4.0 billion, resp..."
+growth,increase,{},2023,202.0,Unknown,0.8180000000000001,goog-10-k-2024.pdf,False,"Cost of revenues increased $13.0 billion from 2023 to 2024 due to an increase in other cost of revenues and TAC of $9.0 billion and $4.0 billion, resp..."
+growth,increase,{},2024,4.0,Unknown,0.798,goog-10-k-2024.pdf,False,"Cost of revenues increased $13.0 billion from 2023 to 2024 due to an increase in other cost of revenues and TAC of $9.0 billion and $4.0 billion, resp..."
+growth,growth,{},2023,21.4,Unknown,0.6100000000000001,goog-10-k-2024.pdf,False,"Cost of revenues increased $13.0 billion from 2023 to 2024 due to an increase in other cost of revenues and TAC of $9.0 billion and $4.0 billion, resp..."
+profit,income,{},2022,31.0,Unknown,0.41400000000000003,goog-10-k-2024.pdf,True,"Income from continuing operations before income taxes consisted of the following (in millions):
+Year Ended December 31,
+[TABLE]
+2022 2023 2024 Domesti..."
+profit,income,{},2022,31.0,Unknown,0.5780000000000001,goog-10-k-2024.pdf,True,"Income from continuing operations before income taxes consisted of the following (in millions):
+Year Ended December 31,
+[TABLE]
+2022 2023 2024 Domesti..."
+profit,income,{},2023,202.0,USD,0.8240000000000001,goog-10-k-2024.pdf,True,"income (loss) $ $ $ 2023 2024 24,048 $ 23,466 86,868 72,191 110,916 95,657 47,964 52,340 12,650 15,714 171,530 163,711 31,008 37,982 12,169 17,180 134..."
+cost,expense,{},2024,2064.0,Unknown,0.238,goog-10-k-2024.pdf,True,"(214)
+(185)
+(385)
+(784)
+We determine realized gains or losses on the sale or extinguishment of debt securities on a specific identification method. Th..."
+profit,income,{},2024,2064.0,Unknown,0.238,goog-10-k-2024.pdf,True,"(214)
+(185)
+(385)
+(784)
+We determine realized gains or losses on the sale or extinguishment of debt securities on a specific identification method. Th..."
+growth,increase,{},2024,1833.0,Unknown,0.502,goog-10-k-2024.pdf,False,"(214)
+(185)
+(385)
+(784)
+We determine realized gains or losses on the sale or extinguishment of debt securities on a specific identification method. Th..."
+balance_sheet,debt,{},2022,784.0,Unknown,0.344,goog-10-k-2024.pdf,True,"(214)
+(185)
+(385)
+(784)
+We determine realized gains or losses on the sale or extinguishment of debt securities on a specific identification method. Th..."
+balance_sheet,debt,{},2022,31.0,Unknown,0.522,goog-10-k-2024.pdf,True,"(214)
+(185)
+(385)
+(784)
+We determine realized gains or losses on the sale or extinguishment of debt securities on a specific identification method. Th..."
+balance_sheet,debt,{},2024,557.0,Unknown,0.764,goog-10-k-2024.pdf,True,"(214)
+(185)
+(385)
+(784)
+We determine realized gains or losses on the sale or extinguishment of debt securities on a specific identification method. Th..."
+balance_sheet,debt,{},2024,103.0,Unknown,0.656,goog-10-k-2024.pdf,True,"(214)
+(185)
+(385)
+(784)
+We determine realized gains or losses on the sale or extinguishment of debt securities on a specific identification method. Th..."
+balance_sheet,debt,{},2024,1588.0,Unknown,0.55,goog-10-k-2024.pdf,True,"(214)
+(185)
+(385)
+(784)
+We determine realized gains or losses on the sale or extinguishment of debt securities on a specific identification method. Th..."
+balance_sheet,debt,{},2024,50.0,Unknown,0.31000000000000005,goog-10-k-2024.pdf,True,"(214)
+(185)
+(385)
+(784)
+We determine realized gains or losses on the sale or extinguishment of debt securities on a specific identification method. Th..."
+balance_sheet,equity,{},2024,1043.0,Unknown,0.136,goog-10-k-2024.pdf,True,"(214)
+(185)
+(385)
+(784)
+We determine realized gains or losses on the sale or extinguishment of debt securities on a specific identification method. Th..."
+balance_sheet,debt,{},2024,4228.0,Unknown,0.448,goog-10-k-2024.pdf,True,"(679)
+(597)
+(634)
+(1,910)
+As of December 31, 2024
+[TABLE]
+Less than 12 Months 12 Months or Greater Total Fair Value Unrealized Loss Fair Value Unreali..."
+cost,expense,{},2024,3455.0,Unknown,0.248,goog-10-k-2024.pdf,True,"# Gains and Losses on Marketable and Non-marketable Equity Securities
+
+Gains and losses (including impairments), net, for marketable and non-marketabl..."
+profit,income,{},2024,3455.0,Unknown,0.248,goog-10-k-2024.pdf,True,"# Gains and Losses on Marketable and Non-marketable Equity Securities
+
+Gains and losses (including impairments), net, for marketable and non-marketabl..."
+balance_sheet,equity,{},2022,31.0,Unknown,0.1,goog-10-k-2024.pdf,True,"# Gains and Losses on Marketable and Non-marketable Equity Securities
+
+Gains and losses (including impairments), net, for marketable and non-marketabl..."
+balance_sheet,equity,{},2022,31.0,Unknown,0.498,goog-10-k-2024.pdf,True,"# Gains and Losses on Marketable and Non-marketable Equity Securities
+
+Gains and losses (including impairments), net, for marketable and non-marketabl..."
+balance_sheet,equity,{},2024,4.0,Unknown,0.774,goog-10-k-2024.pdf,True,"# Gains and Losses on Marketable and Non-marketable Equity Securities
+
+Gains and losses (including impairments), net, for marketable and non-marketabl..."
+balance_sheet,equity,{},2024,3242.0,Unknown,0.5920000000000001,goog-10-k-2024.pdf,True,"# Gains and Losses on Marketable and Non-marketable Equity Securities
+
+Gains and losses (including impairments), net, for marketable and non-marketabl..."
+balance_sheet,equity,{},2024,1.0,Unknown,0.436,goog-10-k-2024.pdf,True,"# Gains and Losses on Marketable and Non-marketable Equity Securities
+
+Gains and losses (including impairments), net, for marketable and non-marketabl..."
+balance_sheet,equity,{},2024,3372.0,Unknown,0.29600000000000004,goog-10-k-2024.pdf,True,"# Gains and Losses on Marketable and Non-marketable Equity Securities
+
+Gains and losses (including impairments), net, for marketable and non-marketabl..."
+balance_sheet,equity,{},2022,1.0,Unknown,0.25,goog-10-k-2024.pdf,True,"# Gains and Losses on Marketable and Non-marketable Equity Securities
+
+Gains and losses (including impairments), net, for marketable and non-marketabl..."
+growth,increase,{},2024,4.0,Unknown,0.806,goog-10-k-2024.pdf,False,"(268)
+(409)
+(1,043)
+(188)
+OI&E, net increased $6.0 billion from 2023 to 2024 primarily due to an increase in net gains on equity securities and a decr..."
+growth,increase,{},Jan 2025,202.0,Unknown,0.502,goog-10-k-2024.pdf,False,"(268)
+(409)
+(1,043)
+(188)
+OI&E, net increased $6.0 billion from 2023 to 2024 primarily due to an increase in net gains on equity securities and a decr..."
+balance_sheet,equity,{},2024,4.0,Unknown,0.706,goog-10-k-2024.pdf,True,"(268)
+(409)
+(1,043)
+(188)
+OI&E, net increased $6.0 billion from 2023 to 2024 primarily due to an increase in net gains on equity securities and a decr..."
+balance_sheet,equity,{},2024,4.0,Unknown,0.33000000000000007,goog-10-k-2024.pdf,True,"(268)
+(409)
+(1,043)
+(188)
+OI&E, net increased $6.0 billion from 2023 to 2024 primarily due to an increase in net gains on equity securities and a decr..."
+balance_sheet,equity,{},2024,4.0,Unknown,0.1,goog-10-k-2024.pdf,True,"(268)
+(409)
+(1,043)
+(188)
+OI&E, net increased $6.0 billion from 2023 to 2024 primarily due to an increase in net gains on equity securities and a decr..."
+balance_sheet,equity,{},Jan 2025,202.0,Unknown,0.15000000000000002,goog-10-k-2024.pdf,True,"(268)
+(409)
+(1,043)
+(188)
+OI&E, net increased $6.0 billion from 2023 to 2024 primarily due to an increase in net gains on equity securities and a decr..."
+balance_sheet,equity,{},2025,8000000000.0,USD,0.65,goog-10-k-2024.pdf,True,"(268)
+(409)
+(1,043)
+(188)
+OI&E, net increased $6.0 billion from 2023 to 2024 primarily due to an increase in net gains on equity securities and a decr..."
+revenue,sales,{},2023,31.0,Unknown,0.126,goog-10-k-2024.pdf,True,"Table of Contents
+Alphabet Inc.
+observable transactions at lower valuations could result in significant losses. In addition, global economic condition..."
+balance_sheet,equity,{},2023,31.0,Unknown,0.41800000000000004,goog-10-k-2024.pdf,True,"Table of Contents
+Alphabet Inc.
+observable transactions at lower valuations could result in significant losses. In addition, global economic condition..."
+balance_sheet,equity,{},2023,31.0,Unknown,0.758,goog-10-k-2024.pdf,True,"Table of Contents
+Alphabet Inc.
+observable transactions at lower valuations could result in significant losses. In addition, global economic condition..."
+balance_sheet,equity,{},2024,4.0,Unknown,0.718,goog-10-k-2024.pdf,True,"Table of Contents
+Alphabet Inc.
+observable transactions at lower valuations could result in significant losses. In addition, global economic condition..."
