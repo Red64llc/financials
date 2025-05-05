@@ -2,26 +2,6 @@
 
 A financial data analysis and visualization application.
 
-## CLI Tool
-
-The package includes a command-line interface (CLI) for processing PDF documents.
-
-### Running the CLI from Host Machine
-
-If you've installed the package locally:
-
-```bash
-# Process a PDF file
-finanalyze process path-to-file.pdf
-```
-
-If you haven't installed the package, you can run the CLI directly using the Python module:
-
-```bash
-# From the project root directory
-python -m financials.cli.cli process path-to-file.pdf
-```
-
 ### Environment Setup
 
 Before using the CLI, make sure to set the required environment variables:
@@ -29,60 +9,22 @@ Before using the CLI, make sure to set the required environment variables:
 ```bash
 # Required for OpenAI embeddings
 export OPENAI_API_KEY="your-api-key"
-
-# If connecting to local Weaviate (started via docker-compose)
-export WEAVIATE_HOST="localhost"
-export WEAVIATE_PORT="8080"
-export WEAVIATE_GRPC_PORT="50051"
 ```
-
-## Project Structure
-
-```
-financials/
-├── src/               # Source code directory
-│   └── financials/    # Main package
-│       ├── __init__.py
-│       ├── app.py     # Streamlit application
-│       ├── pdf_processor.py # PDF processing pipeline
-│       └── cli/       # Command-line interface
-│           ├── __init__.py
-│           └── cli.py # CLI implementation
-├── main.py           # Entry point script
-├── pyproject.toml    # Project configuration
-└── uv.lock           # Lock file for dependencies
-```
-
-## Technology Stack
-
-- Python 3.11+
-- Streamlit 1.45.0+ (UI framework)
-- Pandas 2.2.3+ (Data manipulation)
-- NumPy 2.2.5+ (Numerical computing)
-- Weaviate (Vector database)
-- LangChain (Text processing pipeline)
-- uv (Package manager)
 
 ## Development Environment
 
-### Setup
+### Qucik Start
 
-1. Ensure you have Python 3.11 or higher installed
-2. Install uv package manager if not already installed
-3. Clone the repository
-4. Install dependencies:
-
-```bash
-uv pip install -e .
-```
-
-### Running the Application
-
-#### Directly
-To start the Streamlit UI:
+1. Clone the repository
+2. Start docker-compose
+3. Process a PDF file
+4. Open the UI at http://localhost:8501
 
 ```bash
-python main.py
+git clone git@github.com:Red64llc/financials.git
+cd financials
+docker compose up -d
+docker compose exec financials-ui uv run finanalyze process ./data/goog-10-k-2024.pdf
 ```
 
 #### Using Docker
@@ -139,19 +81,27 @@ To process a PDF file that exists on your host machine:
 docker-compose exec financials-cli finanalyze process /app/data/example.pdf
 ```
 
-##### Running Individual Container
+## Screenshots
 
-Alternatively, you can run just the Financials container:
+### Loading Models
+The first time starting the Docker instance and starting the UI will load all the models. This can take a few minutes. 
+![Screenshot](/screenshots/loading-models.png)
 
-```bash
-docker run -p 8501:8501 financial:v0
-```
+### Chat Loaded Successfully
+Once the models are loaded, the UI will show a success message and the chat interface will be ready to use.
+If you have loaded a PDF or several PDFs, you will see the number of entries in the collection on the sidebar.
+![Screenshot](/screenshots/chat-loaded-successfully.png)
 
-## Patterns and Best Practices
+### Sample Response 1
+By opening the log from Docker as you are chatting, you can see the chunks that are being extracted from the Rack system on the law in the log. 
+![Screenshot](/screenshots/sample-response-1.png)
 
-- Source code is organized in the `src` directory
-- Package management is handled by `uv`
-- Configuration is maintained in `pyproject.toml`
-- Dependencies are locked in `uv.lock`
-- CLI tools are implemented using the argparse library
-- PDF processing follows a pipeline pattern with clear separation of concerns
+### Sample Response 2
+The system first retrieves chunks that are relevant and then processes them to extract and format the information into financial information.
+That involves trying to extract or understand semantic dates, entities, currency, and values. 
+You can see the reasoning on the Docker Compose log. 
+![Screenshot](/screenshots/sample-response-2.png)
+
+### Extracted Financial Information
+The system will extract the financial information and save it as csv file in the output directory.
+![Screenshot](/screenshots/extracted-financial-information.png)
