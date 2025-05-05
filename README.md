@@ -8,19 +8,19 @@ This system is composed of four components:
 * a RAG system (with a Weaviate database)
 * a chat system composed of:
   * a very basic UI powered by Streamlit
-  * a "OptimizedFinancialExtractor" class that extracts and presents financial data
+  * an "OptimizedFinancialExtractor" class that extracts and presents financial data
 * a CLI "finanalyze" that loads company data files into the RAG system
 
 ## Hight Level Description of the Flow
 
 1. load all company data into the RAG
 2. given a user query, extract chunks relevant to the query
-3. use the "OptimizedFinancialExtractor" to extract -semanticaly- financial data:
+3. use the "OptimizedFinancialExtractor" to extract financial data (semanticaly):
     *  values (take into account unit "million USD", etc..)
     *  unit (USD, etc...)
     *  entity (revenue, income, etc...)
     *  date range
-4. format reponse in csv files, [example output](output/balance_sheet_debt_data.csv)
+4. format reponse in csv files, [example output](output/)
 5. format responce and update prompt
 
 ## Development Environment
