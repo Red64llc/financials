@@ -2,23 +2,36 @@
 
 A financial data analysis and visualization application.
 
-### Environment Setup
+## High Level Description of the System
 
-Before using the CLI, make sure to set the required environment variables:
+This system is composed of four components: 
+* a RAG system (with a Weaviate database)
+* a chat system composed of:
+  * a very basic UI powered by Streamlit
+  * a "OptimizedFinancialExtractor" class that extracts and presents financial data
+* a CLI "finanalyze" that loads company data files into the RAG system
 
-```bash
-# Required for OpenAI embeddings
-export OPENAI_API_KEY="your-api-key"
-```
+## Hight Level Description of the Flow
+
+1. load all company data into the RAG
+2. given a user query, extract chunks relevant to the query
+3. use the "OptimizedFinancialExtractor" to extract -semanticaly- financial data:
+    *  values (take into account unit "million USD", etc..)
+    *  unit (USD, etc...)
+    *  entity (revenue, income, etc...)
+    *  date range
+4. format reponse in csv files, [example output](output/balance_sheet_debt_data.csv)
+5. format responce and update prompt
 
 ## Development Environment
 
-### Qucik Start
+### Quick Start
 
 1. Clone the repository
-2. Start docker-compose
-3. Process a PDF file
-4. Open the UI at http://localhost:8501
+2. export OPENAI_API_KEY="your-api-key"
+3. Start docker-compose
+4. Process a PDF file
+5. Open the UI at http://localhost:8501
 
 ```bash
 git clone git@github.com:Red64llc/financials.git
