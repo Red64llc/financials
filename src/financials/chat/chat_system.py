@@ -11,10 +11,25 @@ class ChatSystem:
         logger = logger or logging.getLogger("ChatSystem")
         self.logger = logger
         self.logger.info("Initializing ChatSystem...")
-        self.extractor = OptimizedFinancialExtractor()
-        self.vectordb = WeaviateVectorStore(collection_name=collection_name)
-        self.embedder = EmbeddingService()
+
+        # Get connection details from environment variables or use defaults/passed values
+        self.db_host = os.getenv("WEAVIATE_HOST", "localhost")
+        self.db_port = int(os.getenv("WEAVIATE_PORT", "8080"))
+        self.db_grpc_port = int(os.getenv("WEAVIATE_GRPC_PORT", "50051"))
         self.openai_api_key = os.getenv("OPENAI_API_KEY")
+
+        self.extractor = OptimizedFinancialExtractor()
+        self.vectordb = WeaviateVectorStore(
+            collection_name=collection_name,
+            host=self.db_host,
+            port=self.db_port,
+            grpc_port=self.db_grpc_port,
+            auth_config={"X-OpenAI-Api-Key": self.openai_api_key}
+        )
+        self.embedder = EmbeddingService(
+            embedding_type="openai",
+            api_key=self.openai_api_key
+        )
         # Conversation history (should a memory)
         self.conversation_history = []
         logger.info("ChatSystem initialized successfully")
